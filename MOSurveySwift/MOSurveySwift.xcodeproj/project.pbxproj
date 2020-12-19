@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C07CA392258C917000A198A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07CA391258C917000A198A1 /* AppDelegate.swift */; };
+		C07CA394258C917000A198A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07CA393258C917000A198A1 /* SceneDelegate.swift */; };
+		C07CA396258C917000A198A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07CA395258C917000A198A1 /* ViewController.swift */; };
+		C07CA399258C917000A198A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07CA397258C917000A198A1 /* Main.storyboard */; };
+		C07CA39B258C917300A198A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C07CA39A258C917300A198A1 /* Assets.xcassets */; };
+		C07CA39E258C917300A198A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07CA39C258C917300A198A1 /* LaunchScreen.storyboard */; };
+		C07CA3A8258C91CC00A198A1 /* MOArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07CA3A7258C91CC00A198A1 /* MOArrayDataSource.swift */; };
+		C07CA3AB258C932900A198A1 /* MOTouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07CA3AA258C932900A198A1 /* MOTouchIDViewController.swift */; };
+		C0A4BC45258C98290082EC01 /* MOApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC44258C98290082EC01 /* MOApplePayViewController.swift */; };
+		C0A4BC90258CB9FB0082EC01 /* MOWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC8F258CB9FB0082EC01 /* MOWKWebViewController.swift */; };
+		C0A4BC93258CBC350082EC01 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = C0A4BC92258CBC340082EC01 /* index.html */; };
+		C0A4BCC8258CC4670082EC01 /* MOViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BCC7258CC4670082EC01 /* MOViewTestViewController.swift */; };
+		C0A4BCCB258CC7C40082EC01 /* MOPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BCCA258CC7C40082EC01 /* MOPopViewController.swift */; };
+		C0A4BCF9258CD4540082EC01 /* MOQRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BCF8258CD4540082EC01 /* MOQRScanViewController.swift */; };
+		C0A4BCFF258CD49E0082EC01 /* MOAuthorizationCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BCFC258CD49E0082EC01 /* MOAuthorizationCamera.swift */; };
+		C0A4BD00258CD49E0082EC01 /* MOAuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BCFD258CD49E0082EC01 /* MOAuthorizationManager.swift */; };
+		C0A4BD01258CD49E0082EC01 /* MOAuthorizationPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BCFE258CD49E0082EC01 /* MOAuthorizationPhoto.swift */; };
+		C0A4BD07258CD6720082EC01 /* MOCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD05258CD6720082EC01 /* MOCalendarViewController.swift */; };
+		C0A4BD08258CD6720082EC01 /* MOReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD06258CD6720082EC01 /* MOReminderViewController.swift */; };
+		C0A4BD15258CD8290082EC01 /* MOFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD13258CD8290082EC01 /* MOFirstViewController.swift */; };
+		C0A4BD16258CD8290082EC01 /* MOLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD14258CD8290082EC01 /* MOLocationManager.swift */; };
+		C0A4BD19258CD83C0082EC01 /* MOMultiDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD18258CD83C0082EC01 /* MOMultiDelegateViewController.swift */; };
+		C0A4BD1E258CD8FF0082EC01 /* MOShareDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD1D258CD8FF0082EC01 /* MOShareDocumentViewController.swift */; };
+		C0A4BD22258CDA1D0082EC01 /* MOFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD21258CDA1D0082EC01 /* MOFileManager.swift */; };
+		C0A4BD26258CDA760082EC01 /* MOTableViewStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD25258CDA760082EC01 /* MOTableViewStyleViewController.swift */; };
+		C0A4BD29258CDACD0082EC01 /* MOAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD28258CDACC0082EC01 /* MOAlgorithm.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C07CA38E258C917000A198A1 /* MOSurveySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOSurveySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07CA391258C917000A198A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C07CA393258C917000A198A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C07CA395258C917000A198A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C07CA398258C917000A198A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C07CA39A258C917300A198A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C07CA39D258C917300A198A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C07CA39F258C917300A198A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07CA3A7258C91CC00A198A1 /* MOArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOArrayDataSource.swift; sourceTree = "<group>"; };
+		C07CA3AA258C932900A198A1 /* MOTouchIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTouchIDViewController.swift; sourceTree = "<group>"; };
+		C0A4BC44258C98290082EC01 /* MOApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOApplePayViewController.swift; sourceTree = "<group>"; };
+		C0A4BC8F258CB9FB0082EC01 /* MOWKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOWKWebViewController.swift; sourceTree = "<group>"; };
+		C0A4BC92258CBC340082EC01 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		C0A4BCC7258CC4670082EC01 /* MOViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOViewTestViewController.swift; sourceTree = "<group>"; };
+		C0A4BCCA258CC7C40082EC01 /* MOPopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOPopViewController.swift; sourceTree = "<group>"; };
+		C0A4BCF8258CD4540082EC01 /* MOQRScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOQRScanViewController.swift; sourceTree = "<group>"; };
+		C0A4BCFC258CD49E0082EC01 /* MOAuthorizationCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAuthorizationCamera.swift; sourceTree = "<group>"; };
+		C0A4BCFD258CD49E0082EC01 /* MOAuthorizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAuthorizationManager.swift; sourceTree = "<group>"; };
+		C0A4BCFE258CD49E0082EC01 /* MOAuthorizationPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAuthorizationPhoto.swift; sourceTree = "<group>"; };
+		C0A4BD05258CD6720082EC01 /* MOCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOCalendarViewController.swift; sourceTree = "<group>"; };
+		C0A4BD06258CD6720082EC01 /* MOReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOReminderViewController.swift; sourceTree = "<group>"; };
+		C0A4BD13258CD8290082EC01 /* MOFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOFirstViewController.swift; sourceTree = "<group>"; };
+		C0A4BD14258CD8290082EC01 /* MOLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOLocationManager.swift; sourceTree = "<group>"; };
+		C0A4BD18258CD83C0082EC01 /* MOMultiDelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOMultiDelegateViewController.swift; sourceTree = "<group>"; };
+		C0A4BD1D258CD8FF0082EC01 /* MOShareDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOShareDocumentViewController.swift; sourceTree = "<group>"; };
+		C0A4BD21258CDA1D0082EC01 /* MOFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOFileManager.swift; sourceTree = "<group>"; };
+		C0A4BD25258CDA760082EC01 /* MOTableViewStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTableViewStyleViewController.swift; sourceTree = "<group>"; };
+		C0A4BD28258CDACC0082EC01 /* MOAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAlgorithm.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C07CA38B258C917000A198A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C07CA385258C917000A198A1 = {
+			isa = PBXGroup;
+			children = (
+				C07CA390258C917000A198A1 /* MOSurveySwift */,
+				C07CA38F258C917000A198A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C07CA38F258C917000A198A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C07CA38E258C917000A198A1 /* MOSurveySwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C07CA390258C917000A198A1 /* MOSurveySwift */ = {
+			isa = PBXGroup;
+			children = (
+				C0A4BCFB258CD49E0082EC01 /* MOAuthorization */,
+				C07CA391258C917000A198A1 /* AppDelegate.swift */,
+				C07CA393258C917000A198A1 /* SceneDelegate.swift */,
+				C07CA395258C917000A198A1 /* ViewController.swift */,
+				C07CA3A7258C91CC00A198A1 /* MOArrayDataSource.swift */,
+				C0A4BD28258CDACC0082EC01 /* MOAlgorithm.swift */,
+				C0A4BD21258CDA1D0082EC01 /* MOFileManager.swift */,
+				C0A4BCC7258CC4670082EC01 /* MOViewTestViewController.swift */,
+				C0A4BD25258CDA760082EC01 /* MOTableViewStyleViewController.swift */,
+				C0A4BD1D258CD8FF0082EC01 /* MOShareDocumentViewController.swift */,
+				C0A4BD12258CD8170082EC01 /* MOMultiDelegate */,
+				C0A4BD04258CD65F0082EC01 /* MOEventKit */,
+				C0A4BCF8258CD4540082EC01 /* MOQRScanViewController.swift */,
+				C0A4BCCA258CC7C40082EC01 /* MOPopViewController.swift */,
+				C0A4BC8F258CB9FB0082EC01 /* MOWKWebViewController.swift */,
+				C0A4BC92258CBC340082EC01 /* index.html */,
+				C0A4BC44258C98290082EC01 /* MOApplePayViewController.swift */,
+				C07CA3AA258C932900A198A1 /* MOTouchIDViewController.swift */,
+				C07CA397258C917000A198A1 /* Main.storyboard */,
+				C07CA39A258C917300A198A1 /* Assets.xcassets */,
+				C07CA39C258C917300A198A1 /* LaunchScreen.storyboard */,
+				C07CA39F258C917300A198A1 /* Info.plist */,
+			);
+			path = MOSurveySwift;
+			sourceTree = "<group>";
+		};
+		C0A4BCFB258CD49E0082EC01 /* MOAuthorization */ = {
+			isa = PBXGroup;
+			children = (
+				C0A4BCFC258CD49E0082EC01 /* MOAuthorizationCamera.swift */,
+				C0A4BCFD258CD49E0082EC01 /* MOAuthorizationManager.swift */,
+				C0A4BCFE258CD49E0082EC01 /* MOAuthorizationPhoto.swift */,
+			);
+			path = MOAuthorization;
+			sourceTree = "<group>";
+		};
+		C0A4BD04258CD65F0082EC01 /* MOEventKit */ = {
+			isa = PBXGroup;
+			children = (
+				C0A4BD05258CD6720082EC01 /* MOCalendarViewController.swift */,
+				C0A4BD06258CD6720082EC01 /* MOReminderViewController.swift */,
+			);
+			path = MOEventKit;
+			sourceTree = "<group>";
+		};
+		C0A4BD12258CD8170082EC01 /* MOMultiDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C0A4BD18258CD83C0082EC01 /* MOMultiDelegateViewController.swift */,
+				C0A4BD13258CD8290082EC01 /* MOFirstViewController.swift */,
+				C0A4BD14258CD8290082EC01 /* MOLocationManager.swift */,
+			);
+			path = MOMultiDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C07CA38D258C917000A198A1 /* MOSurveySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07CA3A2258C917300A198A1 /* Build configuration list for PBXNativeTarget "MOSurveySwift" */;
+			buildPhases = (
+				C07CA38A258C917000A198A1 /* Sources */,
+				C07CA38B258C917000A198A1 /* Frameworks */,
+				C07CA38C258C917000A198A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MOSurveySwift;
+			productName = MOSurveySwift;
+			productReference = C07CA38E258C917000A198A1 /* MOSurveySwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C07CA386258C917000A198A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					C07CA38D258C917000A198A1 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = C07CA389258C917000A198A1 /* Build configuration list for PBXProject "MOSurveySwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C07CA385258C917000A198A1;
+			productRefGroup = C07CA38F258C917000A198A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C07CA38D258C917000A198A1 /* MOSurveySwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C07CA38C258C917000A198A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07CA39E258C917300A198A1 /* LaunchScreen.storyboard in Resources */,
+				C0A4BC93258CBC350082EC01 /* index.html in Resources */,
+				C07CA39B258C917300A198A1 /* Assets.xcassets in Resources */,
+				C07CA399258C917000A198A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C07CA38A258C917000A198A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A4BD07258CD6720082EC01 /* MOCalendarViewController.swift in Sources */,
+				C0A4BC45258C98290082EC01 /* MOApplePayViewController.swift in Sources */,
+				C0A4BCCB258CC7C40082EC01 /* MOPopViewController.swift in Sources */,
+				C0A4BD29258CDACD0082EC01 /* MOAlgorithm.swift in Sources */,
+				C07CA3AB258C932900A198A1 /* MOTouchIDViewController.swift in Sources */,
+				C0A4BC90258CB9FB0082EC01 /* MOWKWebViewController.swift in Sources */,
+				C0A4BD08258CD6720082EC01 /* MOReminderViewController.swift in Sources */,
+				C0A4BD16258CD8290082EC01 /* MOLocationManager.swift in Sources */,
+				C0A4BD19258CD83C0082EC01 /* MOMultiDelegateViewController.swift in Sources */,
+				C0A4BCF9258CD4540082EC01 /* MOQRScanViewController.swift in Sources */,
+				C07CA3A8258C91CC00A198A1 /* MOArrayDataSource.swift in Sources */,
+				C07CA396258C917000A198A1 /* ViewController.swift in Sources */,
+				C0A4BD1E258CD8FF0082EC01 /* MOShareDocumentViewController.swift in Sources */,
+				C0A4BD15258CD8290082EC01 /* MOFirstViewController.swift in Sources */,
+				C0A4BD00258CD49E0082EC01 /* MOAuthorizationManager.swift in Sources */,
+				C0A4BD26258CDA760082EC01 /* MOTableViewStyleViewController.swift in Sources */,
+				C0A4BCFF258CD49E0082EC01 /* MOAuthorizationCamera.swift in Sources */,
+				C07CA392258C917000A198A1 /* AppDelegate.swift in Sources */,
+				C07CA394258C917000A198A1 /* SceneDelegate.swift in Sources */,
+				C0A4BD22258CDA1D0082EC01 /* MOFileManager.swift in Sources */,
+				C0A4BD01258CD49E0082EC01 /* MOAuthorizationPhoto.swift in Sources */,
+				C0A4BCC8258CC4670082EC01 /* MOViewTestViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C07CA397258C917000A198A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C07CA398258C917000A198A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C07CA39C258C917300A198A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C07CA39D258C917300A198A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C07CA3A0258C917300A198A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C07CA3A1258C917300A198A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C07CA3A3258C917300A198A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BQB79N6ZP;
+				INFOPLIST_FILE = MOSurveySwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaoyan.MOSurveySwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C07CA3A4258C917300A198A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BQB79N6ZP;
+				INFOPLIST_FILE = MOSurveySwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaoyan.MOSurveySwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C07CA389258C917000A198A1 /* Build configuration list for PBXProject "MOSurveySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07CA3A0258C917300A198A1 /* Debug */,
+				C07CA3A1258C917300A198A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C07CA3A2258C917300A198A1 /* Build configuration list for PBXNativeTarget "MOSurveySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07CA3A3258C917300A198A1 /* Debug */,
+				C07CA3A4258C917300A198A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C07CA386258C917000A198A1 /* Project object */;
+}
