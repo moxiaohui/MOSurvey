@@ -66,10 +66,14 @@
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
   // 判断点击的point 是否在六边形内
-  if (CGPathContainsPoint(self.path.CGPath, NULL, point, NO)) {
+  if (self.drawHexagon) {
+    if (CGPathContainsPoint(self.path.CGPath, NULL, point, NO)) {
+      return [super hitTest:point withEvent:event];
+    }
+    return nil;
+  } else {
     return [super hitTest:point withEvent:event];
   }
-  return nil;
 }
 
 @end

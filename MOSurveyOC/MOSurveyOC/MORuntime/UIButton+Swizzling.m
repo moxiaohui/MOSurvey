@@ -13,10 +13,10 @@
 @implementation UIButton (Swizzling)
 
 + (void)load {
-  static dispatch_once_t onceToken;
-  dispatch_once(&onceToken, ^{
-    [self methodSwizzlingWithOriginalSelector:@selector(sendAction:to:forEvent:) bySwizzledSelector:@selector(mo_SendAction:to:forEvent:)];
-  });
+//  static dispatch_once_t onceToken;
+//  dispatch_once(&onceToken, ^{
+//    [self methodSwizzlingWithOriginalSelector:@selector(sendAction:to:forEvent:) bySwizzledSelector:@selector(mo_SendAction:to:forEvent:)];
+//  });
 }
 
 // 当按钮点击事件 sendAction 时将会执行 mo_SendAction

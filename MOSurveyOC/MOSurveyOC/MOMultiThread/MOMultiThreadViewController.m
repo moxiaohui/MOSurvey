@@ -31,28 +31,28 @@
   // 缺点：非线程安全，需要加锁，性能低；需要管理生命周期；
   // 底层是Pthread，基于C实现
   
-//  UIButton *gcdBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//  [gcdBtn setTitle:@"GCD" forState:UIControlStateNormal];
-//  [gcdBtn setFrame:CGRectMake(20, 120, 200, 50)];
-//  gcdBtn.backgroundColor = [UIColor redColor];
-//  [gcdBtn addTarget:self action:@selector(clickGCD) forControlEvents:UIControlEventTouchUpInside];
-//  [self.view addSubview:gcdBtn];
-//
-//  UIButton *operationBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//  [operationBtn setTitle:@"NSOperation" forState:UIControlStateNormal];
-//  operationBtn.frame = CGRectMake(20, 200, 200, 50);
-//  operationBtn.backgroundColor = [UIColor redColor];
-//  [operationBtn addTarget:self action:@selector(clickNSOperation) forControlEvents:UIControlEventTouchUpInside];
-//  [self.view addSubview:operationBtn];
-//
-//  UIButton *threadBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//  [threadBtn setTitle:@"NSThread" forState:UIControlStateNormal];
-//  threadBtn.frame = CGRectMake(20, 300, 200, 50);
-//  threadBtn.backgroundColor = [UIColor redColor];
-//  [threadBtn addTarget:self action:@selector(clickNSThread) forControlEvents:UIControlEventTouchUpInside];
-//  [self.view addSubview:threadBtn];
+  UIButton *gcdBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+  [gcdBtn setTitle:@"GCD" forState:UIControlStateNormal];
+  [gcdBtn setFrame:CGRectMake(20, 120, 200, 50)];
+  gcdBtn.backgroundColor = [UIColor redColor];
+  [gcdBtn addTarget:self action:@selector(clickGCD) forControlEvents:UIControlEventTouchUpInside];
+  [self.view addSubview:gcdBtn];
+
+  UIButton *operationBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+  [operationBtn setTitle:@"NSOperation" forState:UIControlStateNormal];
+  operationBtn.frame = CGRectMake(20, 200, 200, 50);
+  operationBtn.backgroundColor = [UIColor redColor];
+  [operationBtn addTarget:self action:@selector(clickNSOperation) forControlEvents:UIControlEventTouchUpInside];
+  [self.view addSubview:operationBtn];
+
+  UIButton *threadBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+  [threadBtn setTitle:@"NSThread" forState:UIControlStateNormal];
+  threadBtn.frame = CGRectMake(20, 300, 200, 50);
+  threadBtn.backgroundColor = [UIColor redColor];
+  [threadBtn addTarget:self action:@selector(clickNSThread) forControlEvents:UIControlEventTouchUpInside];
+  [self.view addSubview:threadBtn];
   
-  [MOGCD shareInstance];
+//  [MOGCD shareInstance];
 //  [MOOperationQueue shareInstance];
 //  [MONSThread shareInstance];
 }

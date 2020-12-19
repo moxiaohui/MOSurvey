@@ -37,7 +37,6 @@
 		C07CA3BD258C957300A198A1 /* MONativeNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA3BC258C957300A198A1 /* MONativeNetworkViewController.m */; };
 		C0A4BC60258C9CC50082EC01 /* MOImageButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC5F258C9CC50082EC01 /* MOImageButtonViewController.m */; };
 		C0A4BC6F258CABEC0082EC01 /* MOResponderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC6E258CABEC0082EC01 /* MOResponderViewController.m */; };
-		C0A4BC74258CAC410082EC01 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC72258CAC400082EC01 /* UIButton+Extension.m */; };
 		C0A4BC79258CB13D0082EC01 /* MOBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC78258CB13D0082EC01 /* MOBlockViewController.m */; };
 		C0A4BC7E258CB6AD0082EC01 /* MORuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC7D258CB6AD0082EC01 /* MORuntimeViewController.m */; };
 		C0A4BC87258CB6DB0082EC01 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC84258CB6DB0082EC01 /* UIImage+image.m */; };
@@ -47,7 +46,6 @@
 		C0A4BC98258CBD280082EC01 /* MOPrivateAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC97258CBD280082EC01 /* MOPrivateAPIViewController.m */; };
 		C0A4BC9F258CBFB70082EC01 /* MOTableViewOptimizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC9E258CBFB70082EC01 /* MOTableViewOptimizeViewController.m */; };
 		C0A4BCBF258CC1780082EC01 /* MOViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BCBE258CC1780082EC01 /* MOViewTestViewController.m */; };
-		C0A4BCC3258CC2100082EC01 /* MOViewTestViewController+LabelPress.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BCC2258CC2100082EC01 /* MOViewTestViewController+LabelPress.m */; };
 		C0A4BCD9258CCE840082EC01 /* MOControlCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BCD8258CCE840082EC01 /* MOControlCenterViewController.m */; };
 		C0A4BCDD258CCED10082EC01 /* news.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0A4BCDC258CCED10082EC01 /* news.mp3 */; };
 		C0A4BCE4258CD11F0082EC01 /* MOCricleLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BCE3258CD11F0082EC01 /* MOCricleLoadingViewController.m */; };
@@ -72,8 +70,10 @@
 		C0A4BE0A258CE3A00082EC01 /* UILabel+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BDFF258CE3A00082EC01 /* UILabel+Swizzling.m */; };
 		C0A4BE0B258CE3A00082EC01 /* NSMutableArray+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BE00258CE3A00082EC01 /* NSMutableArray+Swizzling.m */; };
 		C0A4BE0C258CE3A00082EC01 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BE01258CE3A00082EC01 /* NSObject+Swizzling.m */; };
-		C0A4BE0D258CE3A00082EC01 /* UIButton+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BE02258CE3A00082EC01 /* UIButton+Swizzling.m */; };
 		C0A4BE46258CE5EF0082EC01 /* MOLocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BE45258CE5EF0082EC01 /* MOLocksViewController.m */; };
+		E03CE72E258E2AEF003AB8F4 /* MOTitleLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E03CE72D258E2AEF003AB8F4 /* MOTitleLineView.m */; };
+		E03CE733258E2E37003AB8F4 /* UIButton+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BE02258CE3A00082EC01 /* UIButton+Swizzling.m */; };
+		E03CE735258E2E3D003AB8F4 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC72258CAC400082EC01 /* UIButton+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,8 +150,6 @@
 		C0A4BC9E258CBFB70082EC01 /* MOTableViewOptimizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOTableViewOptimizeViewController.m; sourceTree = "<group>"; };
 		C0A4BCBD258CC1780082EC01 /* MOViewTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOViewTestViewController.h; sourceTree = "<group>"; };
 		C0A4BCBE258CC1780082EC01 /* MOViewTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOViewTestViewController.m; sourceTree = "<group>"; };
-		C0A4BCC1258CC2100082EC01 /* MOViewTestViewController+LabelPress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MOViewTestViewController+LabelPress.h"; sourceTree = "<group>"; };
-		C0A4BCC2258CC2100082EC01 /* MOViewTestViewController+LabelPress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MOViewTestViewController+LabelPress.m"; sourceTree = "<group>"; };
 		C0A4BCD7258CCE840082EC01 /* MOControlCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOControlCenterViewController.h; sourceTree = "<group>"; };
 		C0A4BCD8258CCE840082EC01 /* MOControlCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOControlCenterViewController.m; sourceTree = "<group>"; };
 		C0A4BCDC258CCED10082EC01 /* news.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = news.mp3; sourceTree = "<group>"; };
@@ -202,6 +200,8 @@
 		C0A4BE05258CE3A00082EC01 /* UIButton+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Swizzling.h"; sourceTree = "<group>"; };
 		C0A4BE44258CE5EF0082EC01 /* MOLocksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOLocksViewController.h; sourceTree = "<group>"; };
 		C0A4BE45258CE5EF0082EC01 /* MOLocksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOLocksViewController.m; sourceTree = "<group>"; };
+		E03CE72C258E2AEF003AB8F4 /* MOTitleLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOTitleLineView.h; sourceTree = "<group>"; };
+		E03CE72D258E2AEF003AB8F4 /* MOTitleLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTitleLineView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,13 +254,13 @@
 				C07CA1E9258C48F700A198A1 /* ViewController.m */,
 				C07CA20A258C4C1300A198A1 /* MOArrayDataSource.h */,
 				C07CA20B258C4C1300A198A1 /* MOArrayDataSource.m */,
+				C0A4BCBC258CC1630082EC01 /* MOViewTest */,
 				C0A4BE43258CE5E30082EC01 /* MOLocks */,
 				C0A4BDE4258CDFE10082EC01 /* MOMultiThread */,
 				C0A4BD4D258CDD3E0082EC01 /* MOKVC */,
 				C0A4BD40258CDCB80082EC01 /* MOTimer */,
 				C0A4BCEC258CD30E0082EC01 /* MOWaterRipple */,
 				C0A4BCE1258CD1050082EC01 /* MOCricleLoading */,
-				C0A4BCBC258CC1630082EC01 /* MOViewTest */,
 				C0A4BCD6258CCE650082EC01 /* MOControlCenter */,
 				C0A4BC9C258CBF460082EC01 /* MOTableViewOptimize */,
 				C0A4BC95258CBD070082EC01 /* MOPrivateAPI */,
@@ -441,8 +441,8 @@
 			children = (
 				C0A4BCBD258CC1780082EC01 /* MOViewTestViewController.h */,
 				C0A4BCBE258CC1780082EC01 /* MOViewTestViewController.m */,
-				C0A4BCC1258CC2100082EC01 /* MOViewTestViewController+LabelPress.h */,
-				C0A4BCC2258CC2100082EC01 /* MOViewTestViewController+LabelPress.m */,
+				E03CE72C258E2AEF003AB8F4 /* MOTitleLineView.h */,
+				E03CE72D258E2AEF003AB8F4 /* MOTitleLineView.m */,
 			);
 			path = MOViewTest;
 			sourceTree = "<group>";
@@ -662,12 +662,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E03CE735258E2E3D003AB8F4 /* UIButton+Extension.m in Sources */,
+				E03CE733258E2E37003AB8F4 /* UIButton+Swizzling.m in Sources */,
 				C0A4BDF2258CE0110082EC01 /* MONSThread.m in Sources */,
 				C0A4BC9F258CBFB70082EC01 /* MOTableViewOptimizeViewController.m in Sources */,
 				C07CA21D258C4EDF00A198A1 /* GCWebviewJSBridge.m in Sources */,
-				C0A4BCC3258CC2100082EC01 /* MOViewTestViewController+LabelPress.m in Sources */,
 				C0A4BC98258CBD280082EC01 /* MOPrivateAPIViewController.m in Sources */,
-				C0A4BE0D258CE3A00082EC01 /* UIButton+Swizzling.m in Sources */,
 				C0A4BD4B258CDD020082EC01 /* YYWeakProxy.m in Sources */,
 				C0A4BE08258CE3A00082EC01 /* UITableView+Placeholder.m in Sources */,
 				C0A4BCBF258CC1780082EC01 /* MOViewTestViewController.m in Sources */,
@@ -691,6 +691,7 @@
 				C07CA292258C5B8800A198A1 /* UIColorExtension.swift in Sources */,
 				C07CA3B9258C955700A198A1 /* NSObject+Extension.m in Sources */,
 				C0A4BC79258CB13D0082EC01 /* MOBlockViewController.m in Sources */,
+				E03CE72E258E2AEF003AB8F4 /* MOTitleLineView.m in Sources */,
 				C07CA1EA258C48F700A198A1 /* ViewController.m in Sources */,
 				C07CA291258C5B8800A198A1 /* OverLayView.swift in Sources */,
 				C0A4BCD9258CCE840082EC01 /* MOControlCenterViewController.m in Sources */,
@@ -719,7 +720,6 @@
 				C0A4BD50258CDD4F0082EC01 /* MOKVCViewController.m in Sources */,
 				C07CA3BD258C957300A198A1 /* MONativeNetworkViewController.m in Sources */,
 				C07CA28F258C5B8800A198A1 /* KYButtonCells.swift in Sources */,
-				C0A4BC74258CAC410082EC01 /* UIButton+Extension.m in Sources */,
 				C0A4BC8D258CB6F50082EC01 /* MOStudent.m in Sources */,
 				C0A4BD43258CDCC70082EC01 /* MOTimerViewController.m in Sources */,
 				C07CA20C258C4C1300A198A1 /* MOArrayDataSource.m in Sources */,

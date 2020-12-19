@@ -23,7 +23,7 @@
 
 - (void)setupView { //
   NSArray *section1 = @[
-    [MOCellModel modelWithTitle:@"UIVIew Test" vcName:@"MOViewTestViewController"],
+    [MOCellModel modelWithTitle:@"UIView Test" vcName:@"MOViewTestViewController"],
     [MOCellModel modelWithTitle:@"Water Ripple" vcName:@"MOWaterRippleViewController"],
     [MOCellModel modelWithTitle:@"CricleLoading" vcName:@"MOCricleLoadingViewController"],
     [MOCellModel modelWithTitle:@"Control Center" vcName:@"MOControlCenterViewController"],
