@@ -47,11 +47,13 @@ static dispatch_queue_t current_file_queue() {
     
     // 需求：waiting多个异步
     // 方法1：waiting
-    [self waitMultNetwork1];
+//    [self waitMultNetwork1];
     // 方法2：notify
-    [self waitMultNetwork2];
+//    [self waitMultNetwork2];
     // 方法3：enter leave
-    [self waitMultNetwork3];
+//    [self waitMultNetwork3];
+    // 方法4：串行队列
+    [self waitMultNetwork4];
     
     // 需求：waiting多个异步顺序执行 semaphore
   //  [self multipleNetwork3];
@@ -348,6 +350,21 @@ static dispatch_queue_t current_file_queue() {
     NSLog(@"都完成后，执行");
   });
   NSLog(@"是否阻塞主线程"); // 不会
+}
+
+#pragma mark - 串行等待多个异步
+- (void)waitMultNetwork4 {
+  dispatch_queue_t queue = dispatch_queue_create("com.mo.queue", NULL);
+  for (int i = 0; i < 3; i++) {
+    dispatch_async(queue, ^{
+      NSLog(@"执行%i：%@", i, [NSThread currentThread]);
+      sleep(1);
+      NSLog(@"完成%i：%@", i, [NSThread currentThread]);
+    });
+  }
+  dispatch_async(queue, ^{
+    NSLog(@"以上都执行完毕");
+  });
 }
 
 #pragma mark - 需求：waiting多个异步顺序执行 semaphore
