@@ -319,7 +319,7 @@ static dispatch_queue_t current_file_queue() {
     sleep(4);
     NSLog(@"完成2：%@", [NSThread currentThread]);
   });
-  dispatch_group_notify(group, queue, ^{
+  dispatch_group_notify(group, dispatch_get_main_queue(), ^{ // 切换到主线程更新UI
     NSLog(@"都完成后，执行");
   });
   NSLog(@"是否阻塞主线程"); // 不会
@@ -344,7 +344,7 @@ static dispatch_queue_t current_file_queue() {
     NSLog(@"完成2：%@", [NSThread currentThread]);
     dispatch_group_leave(group);
   });
-  dispatch_group_notify(group, queue, ^{
+  dispatch_group_notify(group, dispatch_get_main_queue(), ^{ // 切换到主线程更新UI
     NSLog(@"都完成后，执行");
   });
   NSLog(@"是否阻塞主线程"); // 不会
