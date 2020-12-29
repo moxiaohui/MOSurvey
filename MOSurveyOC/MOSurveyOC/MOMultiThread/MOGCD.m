@@ -46,10 +46,12 @@ static dispatch_queue_t current_file_queue() {
     // 异步函数具备开启线程的能力，开启几条线程由队列决定（串行队列只会开启一条新的线程，并发队列会开启多条线程）
     
     // 需求：waiting多个异步
-    // 方法1：notify
-  //  [self multipleNetwork1];
-    // 方法2：enter leave
-//    [self multipleNetwork2];
+    // 方法1：waiting
+    [self waitMultNetwork1];
+    // 方法2：notify
+    [self waitMultNetwork2];
+    // 方法3：enter leave
+    [self waitMultNetwork3];
     
     // 需求：waiting多个异步顺序执行 semaphore
   //  [self multipleNetwork3];
@@ -284,8 +286,27 @@ static dispatch_queue_t current_file_queue() {
   NSLog(@"是否阻塞主线程"); // 会
 }
 
+#pragma mark - waiting 多个异步
+- (void)waitMultNetwork1 {
+  dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+  dispatch_group_t group = dispatch_group_create();
+  dispatch_group_async(group, queue, ^{
+    NSLog(@"执行1：%@", [NSThread currentThread]);
+    sleep(2);
+    NSLog(@"完成1：%@", [NSThread currentThread]);
+  });
+  dispatch_group_async(group, queue, ^{
+    NSLog(@"执行2：%@", [NSThread currentThread]);
+    sleep(2);
+    NSLog(@"完成3：%@", [NSThread currentThread]);
+  });
+  dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+  // 等待所有异步事件执行完毕后继续执行
+  NSLog(@"是否阻塞主线程"); // 会
+}
+
 #pragma mark - waiting多个异步 方法1: notify
-- (void)multipleNetwork1 {
+- (void)waitMultNetwork2 {
   dispatch_group_t group = dispatch_group_create();
   dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
   dispatch_group_async(group, queue, ^{
@@ -305,7 +326,7 @@ static dispatch_queue_t current_file_queue() {
 }
 
 #pragma mark - waiting多个异步 方法2：enter leave
-- (void)multipleNetwork2 {
+- (void)waitMultNetwork3 {
   dispatch_group_t group = dispatch_group_create();
   dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
   //dispatch_queue_create("moxiaoyan", DISPATCH_QUEUE_CONCURRENT);
