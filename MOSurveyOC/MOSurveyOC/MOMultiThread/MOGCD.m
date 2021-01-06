@@ -53,7 +53,7 @@ static dispatch_queue_t current_file_queue() {
     // 方法3：enter leave
 //    [self waitMultNetwork3];
     // 方法4：串行队列
-    [self waitMultNetwork4];
+//    [self waitMultNetwork4];
     
     // 需求：waiting多个异步顺序执行 semaphore
   //  [self multipleNetwork3];
@@ -70,7 +70,7 @@ static dispatch_queue_t current_file_queue() {
     // 参考2：https://www.jianshu.com/p/a84c2bf0d77b
     // 参考3：https://www.cnblogs.com/yajunLi/p/6274282.html
     
-  //  [self apply];
+    [self apply];
 //    [self maxConcurrent]; // 用信号量控制并行线程数量
     
     // 希望异步加载实现同步效果
@@ -520,6 +520,9 @@ static dispatch_queue_t current_file_queue() {
   dispatch_apply(array.count, queue, ^(size_t index) { // index倒序
     NSLog(@"index:%zu %@", index, array[index]);
   });
+//  dispatch_apply(1, dispatch_get_main_queue(), ^(size_t index) { // 死锁
+//    NSLog(@"dispatch_apply");
+//  });
   NSLog(@"是否阻塞主线程 dispatch_apply"); // 会
 }
 
