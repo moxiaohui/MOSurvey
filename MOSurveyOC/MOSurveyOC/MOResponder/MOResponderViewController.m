@@ -24,7 +24,6 @@
 - (void)setupView {
   // 响应者
   MOResponderTestView *view = [[MOResponderTestView alloc] initWithFrame:CGRectMake(50, 100, 200, 200)];
-  view.backgroundColor = [UIColor grayColor];
   [self.view addSubview:view];
   
   // 将btn绘制成六边形，并将可点区域也设置为六边形

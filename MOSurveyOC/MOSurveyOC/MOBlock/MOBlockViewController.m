@@ -55,11 +55,11 @@ int globalCount = 0; // 全局变量
   // NSGlobalBlock：存储于全局数据区，由系统管理
   // 没有访问auto变量(也叫自动变量，离开作用域就销毁的变量)
   // 如：没有访问任何变量 或 访问了全局变量 或 访问了静态局部变量
-  static int lokalCount = 0; // 静态局部变量
+  static int localCount = 0; // 静态局部变量
   void(^blockA)(void) = ^{
     NSLog(@"blockA"); // 没有访问任何变量
     NSLog(@"%@", [MOManager sharedInstance].name); // 访问了全局变量
-    NSLog(@"%d", lokalCount); // 访问了静态局部变量
+    NSLog(@"%d", localCount); // 访问了静态局部变量
   };
   NSLog(@"blockA: %@", [blockA class]);
 
