@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MOPerson : NSObject
 
-//@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *name;
 @property (nonatomic, strong) NSArray <MOPerson *>*childens;
 
 // 非对象类型 set:nil 会触发 `setNilValueForKey:`
