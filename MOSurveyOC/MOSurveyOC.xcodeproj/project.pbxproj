@@ -71,6 +71,7 @@
 		C0A4BE0B258CE3A00082EC01 /* NSMutableArray+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BE00258CE3A00082EC01 /* NSMutableArray+Swizzling.m */; };
 		C0A4BE0C258CE3A00082EC01 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BE01258CE3A00082EC01 /* NSObject+Swizzling.m */; };
 		C0A4BE46258CE5EF0082EC01 /* MOLocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BE45258CE5EF0082EC01 /* MOLocksViewController.m */; };
+		C0BFAC6F25AFDC300073CCF0 /* MOProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BFAC6E25AFDC300073CCF0 /* MOProxy.m */; };
 		E03CE72E258E2AEF003AB8F4 /* MOTitleLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E03CE72D258E2AEF003AB8F4 /* MOTitleLineView.m */; };
 		E03CE733258E2E37003AB8F4 /* UIButton+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BE02258CE3A00082EC01 /* UIButton+Swizzling.m */; };
 		E03CE735258E2E3D003AB8F4 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC72258CAC400082EC01 /* UIButton+Extension.m */; };
@@ -200,6 +201,8 @@
 		C0A4BE05258CE3A00082EC01 /* UIButton+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Swizzling.h"; sourceTree = "<group>"; };
 		C0A4BE44258CE5EF0082EC01 /* MOLocksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOLocksViewController.h; sourceTree = "<group>"; };
 		C0A4BE45258CE5EF0082EC01 /* MOLocksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOLocksViewController.m; sourceTree = "<group>"; };
+		C0BFAC6D25AFDC300073CCF0 /* MOProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOProxy.h; sourceTree = "<group>"; };
+		C0BFAC6E25AFDC300073CCF0 /* MOProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOProxy.m; sourceTree = "<group>"; };
 		E03CE72C258E2AEF003AB8F4 /* MOTitleLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOTitleLineView.h; sourceTree = "<group>"; };
 		E03CE72D258E2AEF003AB8F4 /* MOTitleLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTitleLineView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -487,6 +490,8 @@
 				C0A4BD42258CDCC70082EC01 /* MOTimerViewController.m */,
 				C0A4BD49258CDD020082EC01 /* NSTimer+MOBlock.h */,
 				C0A4BD47258CDD010082EC01 /* NSTimer+MOBlock.m */,
+				C0BFAC6D25AFDC300073CCF0 /* MOProxy.h */,
+				C0BFAC6E25AFDC300073CCF0 /* MOProxy.m */,
 				C0A4BD46258CDD010082EC01 /* YYWeakProxy.h */,
 				C0A4BD48258CDD010082EC01 /* YYWeakProxy.m */,
 			);
@@ -700,6 +705,7 @@
 				C07CA28E258C5B8800A198A1 /* KYButton.swift in Sources */,
 				C07CA296258C5BDC00A198A1 /* MOMenuButtonViewController.m in Sources */,
 				C07CA1E4258C48F700A198A1 /* AppDelegate.m in Sources */,
+				C0BFAC6F25AFDC300073CCF0 /* MOProxy.m in Sources */,
 				C0A4BC87258CB6DB0082EC01 /* UIImage+image.m in Sources */,
 				C0A4BC6F258CABEC0082EC01 /* MOResponderViewController.m in Sources */,
 				C0A4BE0B258CE3A00082EC01 /* NSMutableArray+Swizzling.m in Sources */,

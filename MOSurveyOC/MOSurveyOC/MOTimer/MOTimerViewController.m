@@ -8,6 +8,7 @@
 #import "MOTimerViewController.h"
 #import "NSTimer+MOBlock.h"
 #import "YYWeakProxy.h"
+#import "MOProxy.h"
 
 @interface MOTimerViewController ()
 @property (nonatomic, strong) NSTimer *timer1; // 持有只是为了在dealloc中释放
@@ -44,11 +45,11 @@
 //  [self.timer4 invalidate];
 //  [self.timer5 invalidate];
 //  [self.timer6 invalidate];
-//  [self.timer7 invalidate];
+//  [self.timer7 in validate];
 //  [self.timer8 invalidate];
   
 //  [self.timerFirst invalidate];
-//  [self.timerSecond invalidate];
+  [self.timerSecond invalidate];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -58,9 +59,9 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-//  [self NSTimer];
+  [self NSTimer];
 //  [self GCDTimer];
-  [self displayLink];
+//  [self displayLink];
 }
 
 - (void)displayLink {
@@ -166,14 +167,16 @@
   
   // 解决方案：
   // 1、block方式添加Target-Action
-  self.timerFirst = [NSTimer mo_scheduledTimerWithTimeInterval:2 repeats:YES block:^(NSTimer * _Nonnull timer) {
-    NSLog(@"优化后的 first timer %@", timer.userInfo);
-  }];
+//  self.timerFirst = [NSTimer mo_scheduledTimerWithTimeInterval:2 repeats:YES block:^(NSTimer * _Nonnull timer) {
+//    NSLog(@"优化后的 first timer %@", timer.userInfo);
+//  }];
   
   // 2、代理类弱引用self + 消息转发
-  YYWeakProxy *weakObj = [YYWeakProxy proxyWithTarget:self];
+  MOProxy *proxy = [MOProxy alloc];
+  proxy.target = self;
+  //  YYWeakProxy *weakObj = [YYWeakProxy proxyWithTarget:self];
   self.timerSecond = [NSTimer scheduledTimerWithTimeInterval:1
-                                                      target:weakObj
+                                                      target:proxy
                                                     selector:@selector(timerSecond:)
                                                     userInfo:@{@"name": @"cool"}
                                                      repeats:YES];
