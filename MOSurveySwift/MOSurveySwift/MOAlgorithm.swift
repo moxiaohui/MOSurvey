@@ -36,23 +36,68 @@ func test() {
 //  let l1 = creatList([1, 2])
 //  let l2 = creatList([5])
 //  let res = longestCommonPrefix(["dog","racecar","car"])
-//  print(res)
-  let node1 = TreeNode(1)
-  let node2 = TreeNode(2)
-  let node3 = TreeNode(3)
-  let node4 = TreeNode(4)
-  let node5 = TreeNode(5)
-  let node6 = TreeNode(6)
-  let node7 = TreeNode(7)
-  let node8 = TreeNode(8)
-  node1.left = node2
-  node1.right = node3
-  node2.left = node4
-  node2.right = node5
-  node3.right = node6
-  node5.left = node7
-  node5.right = node8
-  postOrder(node1)
+  print("moxiaoyan:\(maxArea([4,3,2,1,4]))")
+//  let node1 = TreeNode(1)
+//  let node2 = TreeNode(2)
+//  let node3 = TreeNode(3)
+//  let node4 = TreeNode(4)
+//  let node5 = TreeNode(5)
+//  let node6 = TreeNode(6)
+//  let node7 = TreeNode(7)
+//  let node8 = TreeNode(8)
+//  node1.left = node2
+//  node1.right = node3
+//  node2.left = node4
+//  node2.right = node5
+//  node3.right = node6
+//  node5.left = node7
+//  node5.right = node8
+//  postOrder(node1)
+  
+}
+
+// MARK: 盛水最多的容器
+func maxArea(_ height: [Int]) -> Int {
+  if height.count <= 1 {
+    return 0
+  }
+  // 双指针（移动较矮那边）
+  var left: Int  = 0
+  var right: Int = height.count - 1
+  var maxArea = 0 // 历史最大容量
+  while left < right {
+    let minHeight = min(height[left], height[right])
+    let area = minHeight * (right - left)
+    if area > maxArea {
+      maxArea = area
+    }
+    if height[left] <= height[right]  {
+      left = left + 1
+    } else {
+      right = right - 1
+    }
+  }
+  return maxArea
+}
+
+// MARK: 买卖股票最佳时机
+func maxProfit(_ prices: [Int]) -> Int {
+  if prices.isEmpty {
+    return 0
+  }
+  var minPrice: Int = prices.first! // 历史最低价
+  var maxProfit: Int = 0 // 最高收益
+  for price in prices {
+    if minPrice > price {
+      minPrice = price
+    } else {
+      let profit = price - minPrice
+      if profit > maxProfit {
+        maxProfit = profit
+      }
+    }
+  }
+  return maxProfit
 }
 
 // MARK: 二叉树前序遍历(非递归)
