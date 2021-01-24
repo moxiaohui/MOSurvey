@@ -33,27 +33,7 @@ public class TreeNode {
 }
 
 func test() {
-//  let l1 = creatList([1, 2])
-//  let l2 = creatList([5])
-//  let res = longestCommonPrefix(["dog","racecar","car"])
-  print("moxiaoyan:\(maxArea([4,3,2,1,4]))")
-//  let node1 = TreeNode(1)
-//  let node2 = TreeNode(2)
-//  let node3 = TreeNode(3)
-//  let node4 = TreeNode(4)
-//  let node5 = TreeNode(5)
-//  let node6 = TreeNode(6)
-//  let node7 = TreeNode(7)
-//  let node8 = TreeNode(8)
-//  node1.left = node2
-//  node1.right = node3
-//  node2.left = node4
-//  node2.right = node5
-//  node3.right = node6
-//  node5.left = node7
-//  node5.right = node8
-//  postOrder(node1)
-  
+  print(totalRoad(3, 4))
 }
 
 var coinArray: [Int] = []
@@ -90,6 +70,17 @@ func lestCoinFor(_ n: Int) -> Int {
   print("n: \(n) result:\(result)")
   coinArray[n - 1] = result
   return result
+}
+
+// MARK: - m*n矩阵路径总数
+func totalRoad(_ n: Int, _ m: Int) -> Int {
+  if n <= 0 || m <= 0 {
+    return 0
+  }
+  if n == 1 || m == 1 {
+    return 1
+  }
+  return totalRoad(n - 1, m) + totalRoad(n, m - 1)
 }
 
 // MARK: 盛水最多的容器
