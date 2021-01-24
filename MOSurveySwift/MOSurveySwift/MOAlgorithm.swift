@@ -56,6 +56,42 @@ func test() {
   
 }
 
+var coinArray: [Int] = []
+// MARK: - 最少硬币数
+func leastCoin(_ n: Int) -> Int {
+  // 给定一个数额，计算由1、7、9面值的硬币组成的，最少硬币数是几个
+  if n <= 0 {
+    return 0
+  }
+  coinArray = [Int](repeating: 0, count: n)
+  return lestCoinFor(n)
+}
+func lestCoinFor(_ n: Int) -> Int {
+  if n <= 0 {
+    return 0
+  }
+  if coinArray[n - 1] > 0 {
+    return coinArray[n - 1]
+  }
+  if n <= 9 {
+    var result = 0
+    if n == 7 || n == 9 {
+      result = 1
+    } else if n == 8 {
+      result = 2
+    } else { // n < 7
+      result = n
+    }
+    coinArray[n - 1] = result
+    return result
+  }
+  var result = Swift.min(lestCoinFor(n - 9), lestCoinFor(n - 7), lestCoinFor(n - 1))
+  result = result + 1
+  print("n: \(n) result:\(result)")
+  coinArray[n - 1] = result
+  return result
+}
+
 // MARK: 盛水最多的容器
 func maxArea(_ height: [Int]) -> Int {
   if height.count <= 1 {
