@@ -33,6 +33,13 @@
   [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
   btn.backgroundColor = [UIColor redColor];
   [self.view addSubview:btn];
+    
+  // 测试扩大点击范围
+  UIButton *testButton = [UIButton buttonWithType:UIButtonTypeCustom];
+  testButton.frame = CGRectMake(100, 450, 28, 28);
+  [testButton addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+  testButton.backgroundColor = [UIColor blueColor];
+  [self.view addSubview:testButton];
 }
 
 - (void)click {

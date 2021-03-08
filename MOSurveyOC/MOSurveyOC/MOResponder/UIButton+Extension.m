@@ -72,6 +72,15 @@
     }
     return nil;
   } else {
+    
+    // 扩大点击范围
+    CGFloat marginWidth = (44 - CGRectGetWidth(self.frame)) / 2.0;
+    CGFloat marginHeight = (44 - CGRectGetHeight(self.frame)) / 2.0;
+    CGRect rectExtent = CGRectMake( -marginWidth, -marginHeight, 44, 44);
+    if (CGRectContainsPoint(rectExtent, point)) {
+      return self;
+    }
+    
     return [super hitTest:point withEvent:event];
   }
 }
