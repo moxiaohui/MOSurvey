@@ -75,7 +75,19 @@
 		E03CE72E258E2AEF003AB8F4 /* MOTitleLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E03CE72D258E2AEF003AB8F4 /* MOTitleLineView.m */; };
 		E03CE733258E2E37003AB8F4 /* UIButton+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BE02258CE3A00082EC01 /* UIButton+Swizzling.m */; };
 		E03CE735258E2E3D003AB8F4 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC72258CAC400082EC01 /* UIButton+Extension.m */; };
+		FD10C97425F9A43500389937 /* MOSurveyOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD10C97325F9A43500389937 /* MOSurveyOCUITests.m */; };
+		FD10C98025F9A4DE00389937 /* MOHeaderAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD10C97F25F9A4DE00389937 /* MOHeaderAvatarView.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD10C97625F9A43500389937 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C07CA1D7258C48F700A198A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C07CA1DE258C48F700A198A1;
+			remoteInfo = MOSurveyOC;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		243B907AEB858217C782E0A6 /* Pods_MOSurveyOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOSurveyOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +217,11 @@
 		C0BFAC6E25AFDC300073CCF0 /* MOProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOProxy.m; sourceTree = "<group>"; };
 		E03CE72C258E2AEF003AB8F4 /* MOTitleLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOTitleLineView.h; sourceTree = "<group>"; };
 		E03CE72D258E2AEF003AB8F4 /* MOTitleLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTitleLineView.m; sourceTree = "<group>"; };
+		FD10C97125F9A43500389937 /* MOSurveyOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOSurveyOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD10C97325F9A43500389937 /* MOSurveyOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOSurveyOCUITests.m; sourceTree = "<group>"; };
+		FD10C97525F9A43500389937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD10C97E25F9A4DE00389937 /* MOHeaderAvatarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOHeaderAvatarView.h; sourceTree = "<group>"; };
+		FD10C97F25F9A4DE00389937 /* MOHeaderAvatarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOHeaderAvatarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +230,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				960F7BD09121FA560C3A9A56 /* Pods_MOSurveyOC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD10C96E25F9A43500389937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				C07CA1E1258C48F700A198A1 /* MOSurveyOC */,
+				FD10C97225F9A43500389937 /* MOSurveyOCUITests */,
 				C07CA1E0258C48F700A198A1 /* Products */,
 				101C72106D6CC7D2EB8124F7 /* Pods */,
 				E94C20D3978DF3E23FDDA0B3 /* Frameworks */,
@@ -242,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				C07CA1DF258C48F700A198A1 /* MOSurveyOC.app */,
+				FD10C97125F9A43500389937 /* MOSurveyOCUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,6 +301,7 @@
 				C07CA285258C5B6E00A198A1 /* MOMenuButton */,
 				C07CA277258C583600A198A1 /* MOBottomDrawer */,
 				C07CA210258C4E5D00A198A1 /* MOWebViewJSBridge */,
+				FD10C97D25F9A4A400389937 /* MOHeaderAvatarView */,
 				C07CA1EB258C48F700A198A1 /* Main.storyboard */,
 				C07CA1EE258C48FA00A198A1 /* Assets.xcassets */,
 				C07CA1F0258C48FA00A198A1 /* LaunchScreen.storyboard */,
@@ -552,6 +579,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FD10C97225F9A43500389937 /* MOSurveyOCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD10C97325F9A43500389937 /* MOSurveyOCUITests.m */,
+				FD10C97525F9A43500389937 /* Info.plist */,
+			);
+			path = MOSurveyOCUITests;
+			sourceTree = "<group>";
+		};
+		FD10C97D25F9A4A400389937 /* MOHeaderAvatarView */ = {
+			isa = PBXGroup;
+			children = (
+				FD10C97E25F9A4DE00389937 /* MOHeaderAvatarView.h */,
+				FD10C97F25F9A4DE00389937 /* MOHeaderAvatarView.m */,
+			);
+			path = MOHeaderAvatarView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -574,6 +619,24 @@
 			productReference = C07CA1DF258C48F700A198A1 /* MOSurveyOC.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FD10C97025F9A43500389937 /* MOSurveyOCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD10C97A25F9A43500389937 /* Build configuration list for PBXNativeTarget "MOSurveyOCUITests" */;
+			buildPhases = (
+				FD10C96D25F9A43500389937 /* Sources */,
+				FD10C96E25F9A43500389937 /* Frameworks */,
+				FD10C96F25F9A43500389937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD10C97725F9A43500389937 /* PBXTargetDependency */,
+			);
+			name = MOSurveyOCUITests;
+			productName = MOSurveyOCUITests;
+			productReference = FD10C97125F9A43500389937 /* MOSurveyOCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -584,6 +647,10 @@
 				TargetAttributes = {
 					C07CA1DE258C48F700A198A1 = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					FD10C97025F9A43500389937 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C07CA1DE258C48F700A198A1;
 					};
 				};
 			};
@@ -601,6 +668,7 @@
 			projectRoot = "";
 			targets = (
 				C07CA1DE258C48F700A198A1 /* MOSurveyOC */,
+				FD10C97025F9A43500389937 /* MOSurveyOCUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -615,6 +683,13 @@
 				C07CA222258C4F0600A198A1 /* index.html in Resources */,
 				C07CA1EF258C48FA00A198A1 /* Assets.xcassets in Resources */,
 				C07CA1ED258C48F700A198A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD10C96F25F9A43500389937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +759,7 @@
 				C0A4BE0C258CE3A00082EC01 /* NSObject+Swizzling.m in Sources */,
 				C0A4BCE4258CD11F0082EC01 /* MOCricleLoadingViewController.m in Sources */,
 				C0A4BE0A258CE3A00082EC01 /* UILabel+Swizzling.m in Sources */,
+				FD10C98025F9A4DE00389937 /* MOHeaderAvatarView.m in Sources */,
 				C07CA213258C4EBD00A198A1 /* MOWebViewJSBridgeViewController.m in Sources */,
 				C0A4BCE9258CD17C0082EC01 /* CircleLoadingView.swift in Sources */,
 				C0A4BCF4258CD3430082EC01 /* MOWaterRipperView.m in Sources */,
@@ -732,7 +808,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD10C96D25F9A43500389937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD10C97425F9A43500389937 /* MOSurveyOCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD10C97725F9A43500389937 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C07CA1DE258C48F700A198A1 /* MOSurveyOC */;
+			targetProxy = FD10C97625F9A43500389937 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C07CA1EB258C48F700A198A1 /* Main.storyboard */ = {
@@ -910,6 +1002,46 @@
 			};
 			name = Release;
 		};
+		FD10C97825F9A43500389937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MOSurveyOCUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMO.MOSurveyOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MOSurveyOC;
+			};
+			name = Debug;
+		};
+		FD10C97925F9A43500389937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MOSurveyOCUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMO.MOSurveyOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MOSurveyOC;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -927,6 +1059,15 @@
 			buildConfigurations = (
 				C07CA1F9258C48FA00A198A1 /* Debug */,
 				C07CA1FA258C48FA00A198A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD10C97A25F9A43500389937 /* Build configuration list for PBXNativeTarget "MOSurveyOCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD10C97825F9A43500389937 /* Debug */,
+				FD10C97925F9A43500389937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
