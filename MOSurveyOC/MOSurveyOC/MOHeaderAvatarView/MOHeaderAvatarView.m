@@ -49,7 +49,7 @@ static const CGFloat kRelevanceAvatarViewWidth = 150.0;
 @interface MOMultiAvatarView : UIView
 
 @property (nonatomic, copy) NSString *title; // 标题
-@property (nonatomic, copy) NSArray <NSString *> *avatars; // 头像数组
+@property (nonatomic, copy) NSArray <NSString *> *avatarUrls; // 头像数组
 
 @property (nonatomic, strong) UILabel *titleLabel;  // 标题Label
 @property (nonatomic, strong) NSMutableArray <UIImageView *> *avatarViews; // 头像视图数组
@@ -89,17 +89,17 @@ static const CGFloat kRelevanceAvatarViewWidth = 150.0;
     [self updateSubViewsFrame];
 }
 
-- (void)setAvatars:(NSArray *)avatars {
-    _avatars = [avatars copy];
+- (void)setAvatarUrls:(NSArray *)avatarUrls {
+    _avatarUrls = [avatarUrls copy];
     
     for (UIImageView *avatarImageView in _avatarViews) {
         [avatarImageView removeFromSuperview];
     }
-    if (_avatars.count == 0) {
+    if (_avatarUrls.count == 0) {
         return;
     }
     // 遍历头像数组，渲染头像
-    NSUInteger count = _avatars.count < 3 ? _avatars.count : 3; // 最多显示3个
+    NSUInteger count = _avatarUrls.count < 3 ? _avatarUrls.count : 3; // 最多显示3个
     CGFloat currentX = 0;
     for (int i = 0; i < count; i++) {
         currentX += i == 0 ? kMutiAvatarViewFirstAvatarOriginX : kMutiAvatarViewAvatarSpacing;
@@ -141,9 +141,12 @@ static const CGFloat kRelevanceAvatarViewWidth = 150.0;
 
 @interface MOHeaderAvatarView()
 
-// hostAvatarUrl hostVipImageUrl hostNickName hostSubscribed
-// relevaceAvatarUrls
-// relevaceAvatarTitle
+//@property (nonatomic, copy) NSString *hostAvatarUrl;
+//@property (nonatomic, copy) NSString *hostVipImageUrl;
+//@property (nonatomic, copy) NSString *hostNickName;
+//@property (nonatomic, assign) BOOL hostSubscribed;
+//@property (nonatomic, copy) NSArray <NSString *>* relevaceAvatarUrls;
+//@property (nonatomic, copy) NSString *relevaceAvatarTitle;
 
 @property (nonatomic, strong) UIImageView *avatarImageView; // 主账号头像
 @property (nonatomic, strong) UIImageView *vipImageView;    // 主账号vip标识
@@ -164,7 +167,7 @@ static const CGFloat kRelevanceAvatarViewWidth = 150.0;
         _vipImageView.backgroundColor = [UIColor orangeColor];
         _nameLabel.text = @"日食记";
         _relevanceAvatarView.title = @"多个战队";
-        _relevanceAvatarView.avatars = @[@1, @2, @3];
+        _relevanceAvatarView.avatarUrls = @[@1, @2, @3];
     }
     return self;
 }
@@ -196,17 +199,37 @@ static const CGFloat kRelevanceAvatarViewWidth = 150.0;
     [_subscribeButton setImage:[UIImage imageNamed:@"mo_check"] forState:UIControlStateSelected];
     [_subscribeButton setTitle:nil forState:UIControlStateSelected];
     [_subscribeButton addTarget:self action:@selector(clickSubscribeButton) forControlEvents:UIControlEventTouchUpInside];
+    _subscribeButton.selected = YES;
     [self addSubview:_subscribeButton];
 
     _relevanceAvatarView = [[MOMultiAvatarView alloc] initWithFrame:CGRectZero];
     [self addSubview:_relevanceAvatarView];
 }
 
+- (void)setSubscribed:(BOOL)subscribled {
+    _subscribed = subscribled;
+    if (_subscribeButton.selected != _subscribed) {
+        _subscribeButton.selected = _subscribed;
+        [self setNeedsLayout];
+        [self layoutIfNeeded];
+    }
+}
+
+//- (void)setRelevaceAvatarUrls:(NSArray<NSString *> *)relevaceAvatarUrls {
+//    NSUInteger oldCount = _relevaceAvatarUrls.count;
+//    _relevaceAvatarUrls = [relevaceAvatarUrls copy];
+//    _relevanceAvatarView.avatarUrls = _relevaceAvatarUrls;
+//    if (oldCount != _relevaceAvatarUrls.count) {
+//        [self setNeedsLayout];
+//        [self layoutIfNeeded];
+//    }
+//}
+
 #pragma mark - 点击订阅按钮
 - (void)clickSubscribeButton {
-    _subscribeButton.selected = !_subscribeButton.selected;
-    [self setNeedsLayout];
-    [self layoutIfNeeded];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(clickSubscribeButton)]) {
+        [self.delegate clickSubscribeButton];
+    }
 }
 
 - (void)layoutSubviews {

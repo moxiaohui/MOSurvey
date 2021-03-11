@@ -9,7 +9,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol MOHeaderAvatarViewDelegate <NSObject>
+
+- (void)clickSubscribeButton;
+
+@end
+
 @interface MOHeaderAvatarView : UIView
+
+@property (nonatomic, assign, getter=isSubscribed) BOOL subscribed;
+@property (nonatomic, weak) id<MOHeaderAvatarViewDelegate> delegate;
 
 @end
 

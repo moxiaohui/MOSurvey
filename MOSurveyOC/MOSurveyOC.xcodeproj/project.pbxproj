@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73443F769C87AB189987994A /* Pods_MOSurveyOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6145B4FFE676E6BD404BA0A /* Pods_MOSurveyOCUITests.framework */; };
 		960F7BD09121FA560C3A9A56 /* Pods_MOSurveyOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243B907AEB858217C782E0A6 /* Pods_MOSurveyOC.framework */; };
 		C07CA1E4258C48F700A198A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA1E3258C48F700A198A1 /* AppDelegate.m */; };
 		C07CA1E7258C48F700A198A1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA1E6258C48F700A198A1 /* SceneDelegate.m */; };
@@ -77,6 +78,8 @@
 		E03CE735258E2E3D003AB8F4 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC72258CAC400082EC01 /* UIButton+Extension.m */; };
 		FD10C97425F9A43500389937 /* MOSurveyOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD10C97325F9A43500389937 /* MOSurveyOCUITests.m */; };
 		FD10C98025F9A4DE00389937 /* MOHeaderAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD10C97F25F9A4DE00389937 /* MOHeaderAvatarView.m */; };
+		FD10C98925F9BC6300389937 /* MOHeaderAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD10C97F25F9A4DE00389937 /* MOHeaderAvatarView.m */; };
+		FDFDF65625FA10B9009A482E /* MOHeaderAvatarViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFDF65525FA10B9009A482E /* MOHeaderAvatarViewTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,7 @@
 
 /* Begin PBXFileReference section */
 		243B907AEB858217C782E0A6 /* Pods_MOSurveyOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOSurveyOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		501E650DF5215163315B566E /* Pods-MOSurveyOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveyOCUITests.release.xcconfig"; path = "Target Support Files/Pods-MOSurveyOCUITests/Pods-MOSurveyOCUITests.release.xcconfig"; sourceTree = "<group>"; };
 		519AED46C405712E93FF9AEC /* Pods-MOSurveyOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveyOC.debug.xcconfig"; path = "Target Support Files/Pods-MOSurveyOC/Pods-MOSurveyOC.debug.xcconfig"; sourceTree = "<group>"; };
 		9C8183BDDDF02312D2DD5825 /* Pods-MOSurveyOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveyOC.release.xcconfig"; path = "Target Support Files/Pods-MOSurveyOC/Pods-MOSurveyOC.release.xcconfig"; sourceTree = "<group>"; };
 		C07CA1DF258C48F700A198A1 /* MOSurveyOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOSurveyOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,13 +219,18 @@
 		C0A4BE45258CE5EF0082EC01 /* MOLocksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOLocksViewController.m; sourceTree = "<group>"; };
 		C0BFAC6D25AFDC300073CCF0 /* MOProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOProxy.h; sourceTree = "<group>"; };
 		C0BFAC6E25AFDC300073CCF0 /* MOProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOProxy.m; sourceTree = "<group>"; };
+		D408104E0D815A00784C153A /* Pods-MOSurveyOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveyOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-MOSurveyOCUITests/Pods-MOSurveyOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E03CE72C258E2AEF003AB8F4 /* MOTitleLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOTitleLineView.h; sourceTree = "<group>"; };
 		E03CE72D258E2AEF003AB8F4 /* MOTitleLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTitleLineView.m; sourceTree = "<group>"; };
+		F6145B4FFE676E6BD404BA0A /* Pods_MOSurveyOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOSurveyOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD10C97125F9A43500389937 /* MOSurveyOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOSurveyOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD10C97325F9A43500389937 /* MOSurveyOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOSurveyOCUITests.m; sourceTree = "<group>"; };
 		FD10C97525F9A43500389937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD10C97E25F9A4DE00389937 /* MOHeaderAvatarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOHeaderAvatarView.h; sourceTree = "<group>"; };
 		FD10C97F25F9A4DE00389937 /* MOHeaderAvatarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOHeaderAvatarView.m; sourceTree = "<group>"; };
+		FD10C99225F9C11800389937 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OCMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD10C99425F9C12800389937 /* OCHamcrest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OCHamcrest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFDF65525FA10B9009A482E /* MOHeaderAvatarViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOHeaderAvatarViewTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +246,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73443F769C87AB189987994A /* Pods_MOSurveyOCUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +258,8 @@
 			children = (
 				519AED46C405712E93FF9AEC /* Pods-MOSurveyOC.debug.xcconfig */,
 				9C8183BDDDF02312D2DD5825 /* Pods-MOSurveyOC.release.xcconfig */,
+				D408104E0D815A00784C153A /* Pods-MOSurveyOCUITests.debug.xcconfig */,
+				501E650DF5215163315B566E /* Pods-MOSurveyOCUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -574,7 +586,10 @@
 		E94C20D3978DF3E23FDDA0B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD10C99425F9C12800389937 /* OCHamcrest.framework */,
+				FD10C99225F9C11800389937 /* OCMock.framework */,
 				243B907AEB858217C782E0A6 /* Pods_MOSurveyOC.framework */,
+				F6145B4FFE676E6BD404BA0A /* Pods_MOSurveyOCUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -584,6 +599,7 @@
 			children = (
 				FD10C97325F9A43500389937 /* MOSurveyOCUITests.m */,
 				FD10C97525F9A43500389937 /* Info.plist */,
+				FDFDF65525FA10B9009A482E /* MOHeaderAvatarViewTests.m */,
 			);
 			path = MOSurveyOCUITests;
 			sourceTree = "<group>";
@@ -623,9 +639,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD10C97A25F9A43500389937 /* Build configuration list for PBXNativeTarget "MOSurveyOCUITests" */;
 			buildPhases = (
+				5D27562FD95D4E9A3E0A362D /* [CP] Check Pods Manifest.lock */,
 				FD10C96D25F9A43500389937 /* Sources */,
 				FD10C96E25F9A43500389937 /* Frameworks */,
 				FD10C96F25F9A43500389937 /* Resources */,
+				840DBCB84B118E07AF8D65F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -696,6 +714,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5D27562FD95D4E9A3E0A362D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MOSurveyOCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		840DBCB84B118E07AF8D65F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MOSurveyOCUITests/Pods-MOSurveyOCUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MOSurveyOCUITests/Pods-MOSurveyOCUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MOSurveyOCUITests/Pods-MOSurveyOCUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EE144B5830E6396D21F6D666 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -812,7 +869,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD10C98925F9BC6300389937 /* MOHeaderAvatarView.m in Sources */,
 				FD10C97425F9A43500389937 /* MOSurveyOCUITests.m in Sources */,
+				FDFDF65625FA10B9009A482E /* MOHeaderAvatarViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1004,6 +1063,7 @@
 		};
 		FD10C97825F9A43500389937 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D408104E0D815A00784C153A /* Pods-MOSurveyOCUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1024,6 +1084,7 @@
 		};
 		FD10C97925F9A43500389937 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 501E650DF5215163315B566E /* Pods-MOSurveyOCUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
