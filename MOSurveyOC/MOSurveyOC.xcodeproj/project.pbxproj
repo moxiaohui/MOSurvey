@@ -77,9 +77,6 @@
 		E03CE733258E2E37003AB8F4 /* UIButton+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BE02258CE3A00082EC01 /* UIButton+Swizzling.m */; };
 		E03CE735258E2E3D003AB8F4 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC72258CAC400082EC01 /* UIButton+Extension.m */; };
 		FD10C97425F9A43500389937 /* MOSurveyOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD10C97325F9A43500389937 /* MOSurveyOCUITests.m */; };
-		FD10C98025F9A4DE00389937 /* MOHeaderAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD10C97F25F9A4DE00389937 /* MOHeaderAvatarView.m */; };
-		FD10C98925F9BC6300389937 /* MOHeaderAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD10C97F25F9A4DE00389937 /* MOHeaderAvatarView.m */; };
-		FDFDF65625FA10B9009A482E /* MOHeaderAvatarViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFDF65525FA10B9009A482E /* MOHeaderAvatarViewTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,11 +223,8 @@
 		FD10C97125F9A43500389937 /* MOSurveyOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOSurveyOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD10C97325F9A43500389937 /* MOSurveyOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOSurveyOCUITests.m; sourceTree = "<group>"; };
 		FD10C97525F9A43500389937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD10C97E25F9A4DE00389937 /* MOHeaderAvatarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOHeaderAvatarView.h; sourceTree = "<group>"; };
-		FD10C97F25F9A4DE00389937 /* MOHeaderAvatarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOHeaderAvatarView.m; sourceTree = "<group>"; };
 		FD10C99225F9C11800389937 /* OCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OCMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD10C99425F9C12800389937 /* OCHamcrest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OCHamcrest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDFDF65525FA10B9009A482E /* MOHeaderAvatarViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOHeaderAvatarViewTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,7 +307,6 @@
 				C07CA285258C5B6E00A198A1 /* MOMenuButton */,
 				C07CA277258C583600A198A1 /* MOBottomDrawer */,
 				C07CA210258C4E5D00A198A1 /* MOWebViewJSBridge */,
-				FD10C97D25F9A4A400389937 /* MOHeaderAvatarView */,
 				C07CA1EB258C48F700A198A1 /* Main.storyboard */,
 				C07CA1EE258C48FA00A198A1 /* Assets.xcassets */,
 				C07CA1F0258C48FA00A198A1 /* LaunchScreen.storyboard */,
@@ -599,18 +592,8 @@
 			children = (
 				FD10C97325F9A43500389937 /* MOSurveyOCUITests.m */,
 				FD10C97525F9A43500389937 /* Info.plist */,
-				FDFDF65525FA10B9009A482E /* MOHeaderAvatarViewTests.m */,
 			);
 			path = MOSurveyOCUITests;
-			sourceTree = "<group>";
-		};
-		FD10C97D25F9A4A400389937 /* MOHeaderAvatarView */ = {
-			isa = PBXGroup;
-			children = (
-				FD10C97E25F9A4DE00389937 /* MOHeaderAvatarView.h */,
-				FD10C97F25F9A4DE00389937 /* MOHeaderAvatarView.m */,
-			);
-			path = MOHeaderAvatarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -816,7 +799,6 @@
 				C0A4BE0C258CE3A00082EC01 /* NSObject+Swizzling.m in Sources */,
 				C0A4BCE4258CD11F0082EC01 /* MOCricleLoadingViewController.m in Sources */,
 				C0A4BE0A258CE3A00082EC01 /* UILabel+Swizzling.m in Sources */,
-				FD10C98025F9A4DE00389937 /* MOHeaderAvatarView.m in Sources */,
 				C07CA213258C4EBD00A198A1 /* MOWebViewJSBridgeViewController.m in Sources */,
 				C0A4BCE9258CD17C0082EC01 /* CircleLoadingView.swift in Sources */,
 				C0A4BCF4258CD3430082EC01 /* MOWaterRipperView.m in Sources */,
@@ -869,9 +851,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD10C98925F9BC6300389937 /* MOHeaderAvatarView.m in Sources */,
 				FD10C97425F9A43500389937 /* MOSurveyOCUITests.m in Sources */,
-				FDFDF65625FA10B9009A482E /* MOHeaderAvatarViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
