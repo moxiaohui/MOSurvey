@@ -2,42 +2,34 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>CFBundleDocumentTypes</key>
-  <array>
-    <dict>
-      <key>CFBundleTypeName</key>
-      <string>OFFICE Document</string>
-      <key>LSHandlerRank</key>
-      <string>Owner</string>
-      <key>LSItemContentTypes</key>
-      <array>
-        <string>com.adobe.pdf</string>
-      </array>
-    </dict>
-    <dict>
-      <key>CFBundleTypeName</key>
-      <string>Binary</string>
-      <key>LSHandlerRank</key>
-      <string>Alternate</string>
-      <key>LSItemContentTypes</key>
-      <array>
-        <string>public.data</string>
-        <string>public.executable</string>
-        <string>com.apple.mach-o-binary</string>
-        <string>com.apple.pef-binary</string>
-      </array>
-    </dict>
-  </array>
-	<key>NSCalendarsUsageDescription</key>
-	<string>申请访问日历</string>
-	<key>NSRemindersUsageDescription</key>
-	<string>申请访问提醒事项</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>申请使用相册</string>
-	<key>NSCameraUsageDescription</key>
-	<string>申请使用相机</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>OFFICE Document</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.adobe.pdf</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Binary</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.data</string>
+				<string>public.executable</string>
+				<string>com.apple.mach-o-binary</string>
+				<string>com.apple.pef-binary</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -54,6 +46,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCalendarsUsageDescription</key>
+	<string>申请访问日历</string>
+	<key>NSCameraUsageDescription</key>
+	<string>申请使用相机</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>申请使用相册</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>申请访问提醒事项</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

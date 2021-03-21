@@ -31,6 +31,7 @@ class ViewController: UIViewController {
       MOCellModel("WKWebView", "MOWKWebViewController"),
       MOCellModel("Apple Pay(TODO)", "MOApplePayViewController"),
       MOCellModel("TouchID", "MOTouchIDViewController"),
+      MOCellModel("UnitTests", "MOTestsViewController"),
 //      MOCellModel("文件分享", "MOShareDocumentVC")
     ]
     let section1 = [MOCellModel("文件操作", { [weak self] in
