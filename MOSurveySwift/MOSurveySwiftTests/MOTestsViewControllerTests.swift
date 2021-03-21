@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import MOSurveySwift
+//@testable import MOSurveySwift
 // https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/01-introduction.html#//apple_ref/doc/uid/TP40014132-CH1-SW1
 
 // Swift 无法测试私有属性和方法
@@ -16,10 +16,13 @@ import XCTest
 
 class MOTestsViewControllerTests: XCTestCase {
 
-    private var vc: MOTestsViewController = {
+    let subscribeButton = UIButton(type: .custom)
+    var subscribeButton2 : UIButton? = nil
+    let vc: MOTestsViewController = {
         let vc = MOTestsViewController()
         return vc
     }()
+    let delegate: UITableViewDataSource? = nil
     
     override class func setUp() {
         print("mo: class setUp")
@@ -34,9 +37,9 @@ class MOTestsViewControllerTests: XCTestCase {
     }
     
     override func setUpWithError() throws {
-        self.vc = MOTestsViewController()
         print("mo: setUpWithError")
-
+        self.vc.subscribeButton = self.subscribeButton
+        
     }
     
     override func tearDownWithError() throws {
@@ -47,31 +50,61 @@ class MOTestsViewControllerTests: XCTestCase {
         print("mo: tearDown")
     }
 
-    func testSubscribeButton() throws {
+    func testBoolAssertions() throws {
         print("mo: testFuncation1")
-        // 断言为不为nil (XCTAssertNil 断言为nil)
-        XCTAssertNotNil(self.vc.subscribeButton)
-        // 断言为NO
+        // 断言为 false
         XCTAssertFalse(self.vc.subscribeButton.isSelected)
         self.vc.clickSubscribeButton(sender: self.vc.subscribeButton)
-        // 断言为YES
+        // 断言为 true
         XCTAssert(self.vc.subscribeButton.isSelected)
-        // 断言为YES
+        // 断言为 true
         XCTAssertTrue(self.vc.subscribeButton.isSelected)
-        // 断言 两个对象 相等 (XCTAssertEqualObjects 断言多个对象相等)
-        XCTAssertEqual(self.vc.subscribeButton, self.vc.subscribeButton);
-        
-//        XCTFail("自己创建Tests报错");
-        // 断言不会抛出异常
-//        XCTAssertNoThrow(<#T##expression: T##T#>)
+    }
+    
+    func testNilAssertions() {
+        print("mo: testFuncation2")
+        XCTAssertNil(self.delegate)
+        XCTAssertNotNil(self.subscribeButton)
+    }
+    
+    func testEqualAssertions() {
+        // 断言 两个对象 相等
+        XCTAssertEqual(self.subscribeButton, self.vc.subscribeButton)
+        // 断言 两个对象 不相等
+        XCTAssertNotEqual(self.subscribeButton, self.subscribeButton2)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            print("mo: testFuncation2")
-            // Put the code you want to measure the time of here.
-        }
+    func testComparableValueAssertions() {
+        // 断言num2大于num1
+        XCTAssertGreaterThan(self.vc.num2, self.vc.num1)
+        // 断言num2大于等于num1
+        XCTAssertGreaterThanOrEqual(self.vc.num2, self.vc.num1)
+
+        // 断言num1小于num2
+        XCTAssertLessThan(self.vc.num1, self.vc.num2)
+        // 断言num1小于等于num2
+        XCTAssertLessThanOrEqual(self.vc.num1, self.vc.num2)
     }
+    
+    func testThrowsAressertions() {
+        XCTAssertNoThrow(self.vc.viewDidLoad())
+//        XCTAssertThrowsError(self.vc.viewDidLoad())
+    }
+    
+    func testSkipping() throws {
+        guard self.vc.isCanTests else {
+            throw XCTSkip("Can't test vc")
+        }
+        try XCTSkipIf(!self.vc.isCanTests, "Can't test vc")
+        try XCTSkipUnless(self.vc.isCanTests, "Can't test vc")
+        XCTAssert(self.vc.isCanTests)
+    }
+    
+//    func testPerformanceExample() throws {
+//        // This is an example of a performance test case.
+//        self.measure {
+//            // Put the code you want to measure the time of here.
+//        }
+//    }
 
 }

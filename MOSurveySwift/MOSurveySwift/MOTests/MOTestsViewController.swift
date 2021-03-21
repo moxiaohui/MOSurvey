@@ -9,12 +9,23 @@ import UIKit
 
 class MOTestsViewController: UIViewController {
 
+    var isCanTests: Bool = false
+    var subscribeButton: UIButton = {
+        let btn = UIButton(type: .custom)
+        btn.backgroundColor = .gray
+        btn.setTitle("订阅", for: .normal)
+        btn.setTitle("已订阅", for: .selected)
+        btn.addTarget(self, action: #selector(clickSubscribeButton), for: .touchUpInside)
+        return btn
+    }()
+    let num1: CGFloat = 1.0
+    let num2: CGFloat = 2.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         
         self.view.addSubview(self.subscribeButton)
-        
     }
     
     override func viewDidLayoutSubviews() {
@@ -26,12 +37,5 @@ class MOTestsViewController: UIViewController {
         sender.isSelected = !sender.isSelected
     }
 
-    let subscribeButton: UIButton = {
-        let btn = UIButton(type: .custom)
-        btn.backgroundColor = .gray
-        btn.setTitle("订阅", for: .normal)
-        btn.setTitle("已订阅", for: .selected)
-        btn.addTarget(self, action: #selector(clickSubscribeButton), for: .touchUpInside)
-        return btn
-    }()
+
 }
