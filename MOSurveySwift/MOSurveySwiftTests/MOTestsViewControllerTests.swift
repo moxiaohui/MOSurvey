@@ -100,11 +100,35 @@ class MOTestsViewControllerTests: XCTestCase {
         XCTAssert(self.vc.isCanTests)
     }
     
-//    func testPerformanceExample() throws {
-//        // This is an example of a performance test case.
-//        self.measure {
-//            // Put the code you want to measure the time of here.
-//        }
-//    }
+    func testAsynchronous() {
+        // 为异步下载任务创建一个期望
+        let expectation = XCTestExpectation(description: "Download apple.com home page")
+        let url = URL(string: "https://apple.com")!
+        let dataTask = URLSession.shared.dataTask(with: url) { (data, _, _) in
+            // 断言下载数据不为nil
+            XCTAssertNotNil(data)
+            // 完成预期
+            expectation.fulfill()
+        }
+        dataTask.resume() // 开始下载任务
+        // 等待：知道完成预期 or 超时
+        wait(for: [expectation], timeout: 10.0)
+        // 失败情况1：下载的data为nil
+        // 失败情况2：下载任务在10s内未完成
+    }
+    
+    func testKVOExpectation() {
+        self.vc.title = "xixi"
+        let expectation = XCTKVOExpectation(keyPath: "title", object: self.vc)
+        expectation.handler = { (observedObject, change) in
+            guard let observedObject = observedObject as? MOTestsViewController else {
+                return false
+            }
+            return observedObject.title == "hehe"
+        }
+        self.vc.title = "hehe"
+        let result = XCTWaiter().wait(for: [expectation], timeout: 1)
+        XCTAssertEqual(result, .completed)
+    }
 
 }
