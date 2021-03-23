@@ -9,7 +9,7 @@ import UIKit
 
 class MOTestsViewController: UIViewController {
 
-    var isCanTests: Bool = false
+    public var isCanTests: Bool = false
     var subscribeButton: UIButton = {
         let btn = UIButton(type: .custom)
         btn.backgroundColor = .gray

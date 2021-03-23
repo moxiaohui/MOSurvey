@@ -6,7 +6,7 @@
 //
 
 import XCTest
-//@testable import MOSurveySwift
+@testable import MOSurveySwift
 // https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/01-introduction.html#//apple_ref/doc/uid/TP40014132-CH1-SW1
 
 // Swift 无法测试私有属性和方法
@@ -129,6 +129,14 @@ class MOTestsViewControllerTests: XCTestCase {
         self.vc.title = "hehe"
         let result = XCTWaiter().wait(for: [expectation], timeout: 1)
         XCTAssertEqual(result, .completed)
+    }
+    
+    func testPerformanceExample() throws {
+        measure {
+            for _ in 0...1000 {
+                MOPerson(name: "momo", age: 18)
+            }
+        }
     }
 
 }

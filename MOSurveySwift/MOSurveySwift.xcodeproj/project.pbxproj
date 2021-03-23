@@ -33,6 +33,8 @@
 		C0A4BD22258CDA1D0082EC01 /* MOFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD21258CDA1D0082EC01 /* MOFileManager.swift */; };
 		C0A4BD26258CDA760082EC01 /* MOTableViewStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD25258CDA760082EC01 /* MOTableViewStyleViewController.swift */; };
 		C0A4BD29258CDACD0082EC01 /* MOAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD28258CDACC0082EC01 /* MOAlgorithm.swift */; };
+		E0654FA0260A35AE002F0E93 /* MOSurveySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0654F9F260A35AE002F0E93 /* MOSurveySwiftUITests.swift */; };
+		E0654FAB260A37CA002F0E93 /* MOPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0654FAA260A37CA002F0E93 /* MOPerson.swift */; };
 		FD3D64E52605D73C0056D3FD /* MOSurveySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64E42605D73C0056D3FD /* MOSurveySwiftTests.swift */; };
 		FD3D64F02605D8E70056D3FD /* MOTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOTestsViewController.swift */; };
 		FD3D64F62605DCC10056D3FD /* MOTestsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64F52605DCC10056D3FD /* MOTestsViewControllerTests.swift */; };
@@ -40,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E0654FA2260A35AE002F0E93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C07CA386258C917000A198A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C07CA38D258C917000A198A1;
+			remoteInfo = MOSurveySwift;
+		};
 		FD3D64E72605D73C0056D3FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C07CA386258C917000A198A1 /* Project object */;
@@ -78,6 +87,10 @@
 		C0A4BD21258CDA1D0082EC01 /* MOFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOFileManager.swift; sourceTree = "<group>"; };
 		C0A4BD25258CDA760082EC01 /* MOTableViewStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTableViewStyleViewController.swift; sourceTree = "<group>"; };
 		C0A4BD28258CDACC0082EC01 /* MOAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAlgorithm.swift; sourceTree = "<group>"; };
+		E0654F9D260A35AE002F0E93 /* MOSurveySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOSurveySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0654F9F260A35AE002F0E93 /* MOSurveySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOSurveySwiftUITests.swift; sourceTree = "<group>"; };
+		E0654FA1260A35AE002F0E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0654FAA260A37CA002F0E93 /* MOPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOPerson.swift; sourceTree = "<group>"; };
 		FD3D64E22605D73C0056D3FD /* MOSurveySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOSurveySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3D64E42605D73C0056D3FD /* MOSurveySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOSurveySwiftTests.swift; sourceTree = "<group>"; };
 		FD3D64E62605D73C0056D3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +100,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		C07CA38B258C917000A198A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0654F9A260A35AE002F0E93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -108,6 +128,7 @@
 			children = (
 				C07CA390258C917000A198A1 /* MOSurveySwift */,
 				FD3D64E32605D73C0056D3FD /* MOSurveySwiftTests */,
+				E0654F9E260A35AE002F0E93 /* MOSurveySwiftUITests */,
 				C07CA38F258C917000A198A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,6 +138,7 @@
 			children = (
 				C07CA38E258C917000A198A1 /* MOSurveySwift.app */,
 				FD3D64E22605D73C0056D3FD /* MOSurveySwiftTests.xctest */,
+				E0654F9D260A35AE002F0E93 /* MOSurveySwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +202,15 @@
 			path = MOMultiDelegate;
 			sourceTree = "<group>";
 		};
+		E0654F9E260A35AE002F0E93 /* MOSurveySwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E0654F9F260A35AE002F0E93 /* MOSurveySwiftUITests.swift */,
+				E0654FA1260A35AE002F0E93 /* Info.plist */,
+			);
+			path = MOSurveySwiftUITests;
+			sourceTree = "<group>";
+		};
 		FD3D64E32605D73C0056D3FD /* MOSurveySwiftTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				FD3D64EF2605D8E70056D3FD /* MOTestsViewController.swift */,
+				E0654FAA260A37CA002F0E93 /* MOPerson.swift */,
 			);
 			path = MOTests;
 			sourceTree = "<group>";
@@ -217,6 +249,24 @@
 			productName = MOSurveySwift;
 			productReference = C07CA38E258C917000A198A1 /* MOSurveySwift.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E0654F9C260A35AE002F0E93 /* MOSurveySwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0654FA6260A35AE002F0E93 /* Build configuration list for PBXNativeTarget "MOSurveySwiftUITests" */;
+			buildPhases = (
+				E0654F99260A35AE002F0E93 /* Sources */,
+				E0654F9A260A35AE002F0E93 /* Frameworks */,
+				E0654F9B260A35AE002F0E93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0654FA3260A35AE002F0E93 /* PBXTargetDependency */,
+			);
+			name = MOSurveySwiftUITests;
+			productName = MOSurveySwiftUITests;
+			productReference = E0654F9D260A35AE002F0E93 /* MOSurveySwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		FD3D64E12605D73C0056D3FD /* MOSurveySwiftTests */ = {
 			isa = PBXNativeTarget;
@@ -248,6 +298,10 @@
 					C07CA38D258C917000A198A1 = {
 						CreatedOnToolsVersion = 12.2;
 					};
+					E0654F9C260A35AE002F0E93 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C07CA38D258C917000A198A1;
+					};
 					FD3D64E12605D73C0056D3FD = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = C07CA38D258C917000A198A1;
@@ -269,6 +323,7 @@
 			targets = (
 				C07CA38D258C917000A198A1 /* MOSurveySwift */,
 				FD3D64E12605D73C0056D3FD /* MOSurveySwiftTests */,
+				E0654F9C260A35AE002F0E93 /* MOSurveySwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -282,6 +337,13 @@
 				C0A4BC93258CBC350082EC01 /* index.html in Resources */,
 				C07CA39B258C917300A198A1 /* Assets.xcassets in Resources */,
 				C07CA399258C917000A198A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0654F9B260A35AE002F0E93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,9 +381,18 @@
 				C0A4BCFF258CD49E0082EC01 /* MOAuthorizationCamera.swift in Sources */,
 				C07CA392258C917000A198A1 /* AppDelegate.swift in Sources */,
 				C07CA394258C917000A198A1 /* SceneDelegate.swift in Sources */,
+				E0654FAB260A37CA002F0E93 /* MOPerson.swift in Sources */,
 				C0A4BD22258CDA1D0082EC01 /* MOFileManager.swift in Sources */,
 				C0A4BD01258CD49E0082EC01 /* MOAuthorizationPhoto.swift in Sources */,
 				C0A4BCC8258CC4670082EC01 /* MOViewTestViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0654F99260A35AE002F0E93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0654FA0260A35AE002F0E93 /* MOSurveySwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +409,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E0654FA3260A35AE002F0E93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C07CA38D258C917000A198A1 /* MOSurveySwift */;
+			targetProxy = E0654FA2260A35AE002F0E93 /* PBXContainerItemProxy */;
+		};
 		FD3D64E82605D73C0056D3FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C07CA38D258C917000A198A1 /* MOSurveySwift */;
@@ -522,6 +598,46 @@
 			};
 			name = Release;
 		};
+		E0654FA4260A35AE002F0E93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WUQQBVA6S;
+				INFOPLIST_FILE = MOSurveySwiftUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaoyan.MOSurveySwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MOSurveySwift;
+			};
+			name = Debug;
+		};
+		E0654FA5260A35AE002F0E93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WUQQBVA6S;
+				INFOPLIST_FILE = MOSurveySwiftUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaoyan.MOSurveySwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MOSurveySwift;
+			};
+			name = Release;
+		};
 		FD3D64E92605D73C0056D3FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -583,6 +699,15 @@
 			buildConfigurations = (
 				C07CA3A3258C917300A198A1 /* Debug */,
 				C07CA3A4258C917300A198A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0654FA6260A35AE002F0E93 /* Build configuration list for PBXNativeTarget "MOSurveySwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0654FA4260A35AE002F0E93 /* Debug */,
+				E0654FA5260A35AE002F0E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
