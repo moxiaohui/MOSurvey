@@ -38,7 +38,9 @@
 		FD3D64E52605D73C0056D3FD /* MOSurveySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64E42605D73C0056D3FD /* MOSurveySwiftTests.swift */; };
 		FD3D64F02605D8E70056D3FD /* MOTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOTestsViewController.swift */; };
 		FD3D64F62605DCC10056D3FD /* MOTestsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64F52605DCC10056D3FD /* MOTestsViewControllerTests.swift */; };
-		FD3D650B26062A960056D3FD /* MOTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOTestsViewController.swift */; };
+		FD8A09B7260F601800618761 /* MOTestsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8A09B6260F601800618761 /* MOTestsViewControllerUITests.swift */; };
+		FD8A09BB260F611300618761 /* MOTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOTestsViewController.swift */; };
+		FD8A09C2260F62C300618761 /* MOTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOTestsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,7 @@
 		FD3D64E62605D73C0056D3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD3D64EF2605D8E70056D3FD /* MOTestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTestsViewController.swift; sourceTree = "<group>"; };
 		FD3D64F52605DCC10056D3FD /* MOTestsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTestsViewControllerTests.swift; sourceTree = "<group>"; };
+		FD8A09B6260F601800618761 /* MOTestsViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTestsViewControllerUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				E0654F9F260A35AE002F0E93 /* MOSurveySwiftUITests.swift */,
+				FD8A09B6260F601800618761 /* MOTestsViewControllerUITests.swift */,
 				E0654FA1260A35AE002F0E93 /* Info.plist */,
 			);
 			path = MOSurveySwiftUITests;
@@ -392,6 +396,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8A09BB260F611300618761 /* MOTestsViewController.swift in Sources */,
+				FD8A09B7260F601800618761 /* MOTestsViewControllerUITests.swift in Sources */,
 				E0654FA0260A35AE002F0E93 /* MOSurveySwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,7 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD3D650B26062A960056D3FD /* MOTestsViewController.swift in Sources */,
+				FD8A09C2260F62C300618761 /* MOTestsViewController.swift in Sources */,
 				FD3D64F62605DCC10056D3FD /* MOTestsViewControllerTests.swift in Sources */,
 				FD3D64E52605D73C0056D3FD /* MOSurveySwiftTests.swift in Sources */,
 			);

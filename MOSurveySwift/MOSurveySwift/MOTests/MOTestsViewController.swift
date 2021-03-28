@@ -7,6 +7,8 @@
 
 import UIKit
 
+let gSubscribeButtonAccessibilityIdentifier = "MOTestsViewController_subscribeButton"
+
 class MOTestsViewController: UIViewController {
 
     public var isCanTests: Bool = false
@@ -16,6 +18,7 @@ class MOTestsViewController: UIViewController {
         btn.setTitle("订阅", for: .normal)
         btn.setTitle("已订阅", for: .selected)
         btn.addTarget(self, action: #selector(clickSubscribeButton), for: .touchUpInside)
+        btn.accessibilityIdentifier = gSubscribeButtonAccessibilityIdentifier
         return btn
     }()
     let num1: CGFloat = 1.0
@@ -36,6 +39,5 @@ class MOTestsViewController: UIViewController {
     @objc func clickSubscribeButton(sender: UIButton) {
         sender.isSelected = !sender.isSelected
     }
-
 
 }
