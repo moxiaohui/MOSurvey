@@ -2,7 +2,7 @@
 //  NSTimer+MOBlock.m
 //  00.OCDemo
 //
-//  Created by 莫晓卉 on 2020/7/11.
+//  Created by 莫小言 on 2020/7/11.
 //  Copyright © 2020 moxiaohui. All rights reserved.
 //
 

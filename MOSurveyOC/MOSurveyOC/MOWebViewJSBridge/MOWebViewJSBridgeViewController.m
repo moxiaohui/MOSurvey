@@ -2,7 +2,7 @@
 //  MOWebViewJSBridgeViewController.m
 //  MOSurveyOC
 //
-//  Created by 莫晓卉 on 2020/12/18.
+//  Created by 莫小言 on 2020/12/18.
 //
 
 #import "MOWebViewJSBridgeViewController.h"

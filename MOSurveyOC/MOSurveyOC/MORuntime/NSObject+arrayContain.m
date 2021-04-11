@@ -2,8 +2,8 @@
 //  NSObject+arrayContain.m
 //  04_runtime使用
 //
-//  Created by 莫晓卉 on 2018/3/29.
-//  Copyright © 2018年 莫晓卉. All rights reserved.
+//  Created by 莫小言 on 2018/3/29.
+//  Copyright © 2018年 莫小言. All rights reserved.
 //
 
 #import "NSObject+arrayContain.h"

@@ -2,10 +2,11 @@
 //  MOSurveyOCTests.m
 //  MOSurveyOCTests
 //
-//  Created by 莫晓卉 on 2021/4/11.
+//  Created by 莫小言 on 2021/4/11.
 //
 
 #import <XCTest/XCTest.h>
+#import <OCMock/OCMock.h>
 
 @interface MOSurveyOCTests : XCTestCase
 
