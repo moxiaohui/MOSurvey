@@ -10,7 +10,11 @@ target 'MOSurveyOC' do
   # Pods for MOSurveyOC
 end
 
-target 'MOSurveyOCUITests' do
+target 'MOSurveyOCTests' do
   use_frameworks!
   pod 'OCMock', '~> 3.8.1'
+end
+
+target 'MOSurveyOCUITests' do
+  use_frameworks!
 end

@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "MOArrayDataSource.h"
+#import "MOPerson.h"
 
 @interface ViewController () <UITableViewDelegate>
 @property (nonatomic, strong) MOArrayDataSource *dataSource;
@@ -18,7 +19,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.view.backgroundColor = [UIColor whiteColor];
-  [self setupView];
+//  [self setupView];
 }
 
 - (void)setupView { //

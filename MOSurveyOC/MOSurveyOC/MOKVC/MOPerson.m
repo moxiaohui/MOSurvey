@@ -178,4 +178,19 @@
 //  return YES;
 //}
 
+#pragma mark - 以下，OCMock Demo 使用
+
+- (void)loadFriendsWithError:(NSError **)error {
+    *error = [NSError errorWithDomain:@"获取friends失败" code:001 userInfo:nil];
+}
+
+- (void)deviceWithComplete:(void(^)(NSString *value))complete {
+    complete(@"iwatch");
+}
+
+//- (void)deviceWithKey:(NSString *)key result:(void(^)(NSString *value))complete {
+//  NSDictionary *dic = @{@"mac1":@"device1"};
+//  complete(dic[key]);
+//}
+
 @end

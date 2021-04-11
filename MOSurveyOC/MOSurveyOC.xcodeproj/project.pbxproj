@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		73443F769C87AB189987994A /* Pods_MOSurveyOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6145B4FFE676E6BD404BA0A /* Pods_MOSurveyOCUITests.framework */; };
 		960F7BD09121FA560C3A9A56 /* Pods_MOSurveyOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243B907AEB858217C782E0A6 /* Pods_MOSurveyOC.framework */; };
+		B705DF427A09CF70DC09A0A3 /* Pods_MOSurveyOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C64F7AA6521017C82D970F /* Pods_MOSurveyOCTests.framework */; };
 		C07CA1E4258C48F700A198A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA1E3258C48F700A198A1 /* AppDelegate.m */; };
 		C07CA1E7258C48F700A198A1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA1E6258C48F700A198A1 /* SceneDelegate.m */; };
 		C07CA1EA258C48F700A198A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA1E9258C48F700A198A1 /* ViewController.m */; };
@@ -99,8 +100,11 @@
 
 /* Begin PBXFileReference section */
 		243B907AEB858217C782E0A6 /* Pods_MOSurveyOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOSurveyOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		285450EB74C242C42C7BF8A0 /* Pods-MOSurveyOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveyOCTests.release.xcconfig"; path = "Target Support Files/Pods-MOSurveyOCTests/Pods-MOSurveyOCTests.release.xcconfig"; sourceTree = "<group>"; };
 		501E650DF5215163315B566E /* Pods-MOSurveyOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveyOCUITests.release.xcconfig"; path = "Target Support Files/Pods-MOSurveyOCUITests/Pods-MOSurveyOCUITests.release.xcconfig"; sourceTree = "<group>"; };
 		519AED46C405712E93FF9AEC /* Pods-MOSurveyOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveyOC.debug.xcconfig"; path = "Target Support Files/Pods-MOSurveyOC/Pods-MOSurveyOC.debug.xcconfig"; sourceTree = "<group>"; };
+		54C64F7AA6521017C82D970F /* Pods_MOSurveyOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOSurveyOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C79B1EBC0BD6EC11F0B695 /* Pods-MOSurveyOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveyOCTests.debug.xcconfig"; path = "Target Support Files/Pods-MOSurveyOCTests/Pods-MOSurveyOCTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C8183BDDDF02312D2DD5825 /* Pods-MOSurveyOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveyOC.release.xcconfig"; path = "Target Support Files/Pods-MOSurveyOC/Pods-MOSurveyOC.release.xcconfig"; sourceTree = "<group>"; };
 		C07CA1DF258C48F700A198A1 /* MOSurveyOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOSurveyOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07CA1E2258C48F700A198A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -251,6 +255,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B705DF427A09CF70DC09A0A3 /* Pods_MOSurveyOCTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +277,8 @@
 				9C8183BDDDF02312D2DD5825 /* Pods-MOSurveyOC.release.xcconfig */,
 				D408104E0D815A00784C153A /* Pods-MOSurveyOCUITests.debug.xcconfig */,
 				501E650DF5215163315B566E /* Pods-MOSurveyOCUITests.release.xcconfig */,
+				75C79B1EBC0BD6EC11F0B695 /* Pods-MOSurveyOCTests.debug.xcconfig */,
+				285450EB74C242C42C7BF8A0 /* Pods-MOSurveyOCTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -612,6 +619,7 @@
 				FD10C99225F9C11800389937 /* OCMock.framework */,
 				243B907AEB858217C782E0A6 /* Pods_MOSurveyOC.framework */,
 				F6145B4FFE676E6BD404BA0A /* Pods_MOSurveyOCUITests.framework */,
+				54C64F7AA6521017C82D970F /* Pods_MOSurveyOCTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -651,9 +659,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0FCDD912622FFCA008F6293 /* Build configuration list for PBXNativeTarget "MOSurveyOCTests" */;
 			buildPhases = (
+				4D056C22A0C63DF1FFDB1C8F /* [CP] Check Pods Manifest.lock */,
 				E0FCDD842622FFCA008F6293 /* Sources */,
 				E0FCDD852622FFCA008F6293 /* Frameworks */,
 				E0FCDD862622FFCA008F6293 /* Resources */,
+				D50CD67EFD6D01F18BFD417B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -673,7 +683,6 @@
 				FD10C96D25F9A43500389937 /* Sources */,
 				FD10C96E25F9A43500389937 /* Frameworks */,
 				FD10C96F25F9A43500389937 /* Resources */,
-				840DBCB84B118E07AF8D65F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -756,6 +765,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4D056C22A0C63DF1FFDB1C8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MOSurveyOCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5D27562FD95D4E9A3E0A362D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -778,21 +809,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		840DBCB84B118E07AF8D65F2 /* [CP] Embed Pods Frameworks */ = {
+		D50CD67EFD6D01F18BFD417B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MOSurveyOCUITests/Pods-MOSurveyOCUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MOSurveyOCTests/Pods-MOSurveyOCTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MOSurveyOCUITests/Pods-MOSurveyOCUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MOSurveyOCTests/Pods-MOSurveyOCTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MOSurveyOCUITests/Pods-MOSurveyOCUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MOSurveyOCTests/Pods-MOSurveyOCTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE144B5830E6396D21F6D666 /* [CP] Check Pods Manifest.lock */ = {
@@ -1115,6 +1146,7 @@
 		};
 		E0FCDD8F2622FFCA008F6293 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C79B1EBC0BD6EC11F0B695 /* Pods-MOSurveyOCTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1136,6 +1168,7 @@
 		};
 		E0FCDD902622FFCA008F6293 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 285450EB74C242C42C7BF8A0 /* Pods-MOSurveyOCTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -21,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)personWithName:(NSString *)name;
 
+/*  以下，OCMock Demo 使用 */
+- (void)loadFriendsWithError:(NSError **)error;
+- (void)deviceWithComplete:(void(^)(NSString *value))complete;
+
 @end
 
 NS_ASSUME_NONNULL_END
