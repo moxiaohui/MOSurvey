@@ -7,7 +7,6 @@
 
 #import "ViewController.h"
 #import "MOArrayDataSource.h"
-#import "MOHeaderAvatarView.h"
 
 @interface ViewController () <UITableViewDelegate>
 @property (nonatomic, strong) MOArrayDataSource *dataSource;
@@ -19,10 +18,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.view.backgroundColor = [UIColor whiteColor];
-    MOHeaderAvatarView *view = [[MOHeaderAvatarView alloc] initWithFrame:CGRectZero];
-    view.frame = CGRectMake(20, 100, 300, 44);
-    [self.view addSubview:view];
-//  [self setupView];
+  [self setupView];
 }
 
 - (void)setupView { //

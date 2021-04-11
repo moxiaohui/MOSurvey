@@ -1,25 +1,20 @@
 PODS:
   - Masonry (1.1.0)
-  - OCHamcrest (0.1.1)
-  - OCMock (0.1.2)
+  - OCMock (3.8.1)
 
 DEPENDENCIES:
   - Masonry
-  - OCHamcrest (= 0.1.1)
-  - OCMock (= 0.1.2)
+  - OCMock (~> 3.8.1)
 
 SPEC REPOS:
-  http://git.code.oa.com/TencentVideoShared/VideoBase.git:
-    - OCHamcrest
-    - OCMock
   trunk:
     - Masonry
+    - OCMock
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  OCHamcrest: 1d9850dbeedc8025aaf893a24abe8ef925364340
-  OCMock: 7ae734796ae93ff41bba6e289d4f4e528d794638
+  OCMock: 29f6e52085b4e7d9b075cbf03ed7c3112f82f934
 
-PODFILE CHECKSUM: 08f3cb90bd51237518bdf356eed00781d71d9c4d
+PODFILE CHECKSUM: e97b144f34c20d66ccd6013075b7ae00906ecd6d
 
 COCOAPODS: 1.10.0

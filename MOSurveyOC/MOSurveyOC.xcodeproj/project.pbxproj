@@ -76,10 +76,18 @@
 		E03CE72E258E2AEF003AB8F4 /* MOTitleLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E03CE72D258E2AEF003AB8F4 /* MOTitleLineView.m */; };
 		E03CE733258E2E37003AB8F4 /* UIButton+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BE02258CE3A00082EC01 /* UIButton+Swizzling.m */; };
 		E03CE735258E2E3D003AB8F4 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BC72258CAC400082EC01 /* UIButton+Extension.m */; };
+		E0FCDD8B2622FFCA008F6293 /* MOSurveyOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FCDD8A2622FFCA008F6293 /* MOSurveyOCTests.m */; };
 		FD10C97425F9A43500389937 /* MOSurveyOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD10C97325F9A43500389937 /* MOSurveyOCUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E0FCDD8D2622FFCA008F6293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C07CA1D7258C48F700A198A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C07CA1DE258C48F700A198A1;
+			remoteInfo = MOSurveyOC;
+		};
 		FD10C97625F9A43500389937 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C07CA1D7258C48F700A198A1 /* Project object */;
@@ -219,6 +227,9 @@
 		D408104E0D815A00784C153A /* Pods-MOSurveyOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveyOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-MOSurveyOCUITests/Pods-MOSurveyOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E03CE72C258E2AEF003AB8F4 /* MOTitleLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOTitleLineView.h; sourceTree = "<group>"; };
 		E03CE72D258E2AEF003AB8F4 /* MOTitleLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTitleLineView.m; sourceTree = "<group>"; };
+		E0FCDD882622FFCA008F6293 /* MOSurveyOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOSurveyOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0FCDD8A2622FFCA008F6293 /* MOSurveyOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOSurveyOCTests.m; sourceTree = "<group>"; };
+		E0FCDD8C2622FFCA008F6293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6145B4FFE676E6BD404BA0A /* Pods_MOSurveyOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOSurveyOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD10C97125F9A43500389937 /* MOSurveyOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOSurveyOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD10C97325F9A43500389937 /* MOSurveyOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOSurveyOCUITests.m; sourceTree = "<group>"; };
@@ -233,6 +244,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				960F7BD09121FA560C3A9A56 /* Pods_MOSurveyOC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0FCDD852622FFCA008F6293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				C07CA1E1258C48F700A198A1 /* MOSurveyOC */,
+				E0FCDD892622FFCA008F6293 /* MOSurveyOCTests */,
 				FD10C97225F9A43500389937 /* MOSurveyOCUITests */,
 				C07CA1E0258C48F700A198A1 /* Products */,
 				101C72106D6CC7D2EB8124F7 /* Pods */,
@@ -274,6 +293,7 @@
 			children = (
 				C07CA1DF258C48F700A198A1 /* MOSurveyOC.app */,
 				FD10C97125F9A43500389937 /* MOSurveyOCUITests.xctest */,
+				E0FCDD882622FFCA008F6293 /* MOSurveyOCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -576,6 +596,15 @@
 			path = MOLocks;
 			sourceTree = "<group>";
 		};
+		E0FCDD892622FFCA008F6293 /* MOSurveyOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0FCDD8A2622FFCA008F6293 /* MOSurveyOCTests.m */,
+				E0FCDD8C2622FFCA008F6293 /* Info.plist */,
+			);
+			path = MOSurveyOCTests;
+			sourceTree = "<group>";
+		};
 		E94C20D3978DF3E23FDDA0B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -618,6 +647,24 @@
 			productReference = C07CA1DF258C48F700A198A1 /* MOSurveyOC.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E0FCDD872622FFCA008F6293 /* MOSurveyOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0FCDD912622FFCA008F6293 /* Build configuration list for PBXNativeTarget "MOSurveyOCTests" */;
+			buildPhases = (
+				E0FCDD842622FFCA008F6293 /* Sources */,
+				E0FCDD852622FFCA008F6293 /* Frameworks */,
+				E0FCDD862622FFCA008F6293 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0FCDD8E2622FFCA008F6293 /* PBXTargetDependency */,
+			);
+			name = MOSurveyOCTests;
+			productName = MOSurveyOCTests;
+			productReference = E0FCDD882622FFCA008F6293 /* MOSurveyOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FD10C97025F9A43500389937 /* MOSurveyOCUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD10C97A25F9A43500389937 /* Build configuration list for PBXNativeTarget "MOSurveyOCUITests" */;
@@ -649,6 +696,10 @@
 					C07CA1DE258C48F700A198A1 = {
 						CreatedOnToolsVersion = 12.2;
 					};
+					E0FCDD872622FFCA008F6293 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C07CA1DE258C48F700A198A1;
+					};
 					FD10C97025F9A43500389937 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = C07CA1DE258C48F700A198A1;
@@ -670,6 +721,7 @@
 			targets = (
 				C07CA1DE258C48F700A198A1 /* MOSurveyOC */,
 				FD10C97025F9A43500389937 /* MOSurveyOCUITests */,
+				E0FCDD872622FFCA008F6293 /* MOSurveyOCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -684,6 +736,13 @@
 				C07CA222258C4F0600A198A1 /* index.html in Resources */,
 				C07CA1EF258C48FA00A198A1 /* Assets.xcassets in Resources */,
 				C07CA1ED258C48F700A198A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0FCDD862622FFCA008F6293 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,6 +906,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0FCDD842622FFCA008F6293 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0FCDD8B2622FFCA008F6293 /* MOSurveyOCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD10C96D25F9A43500389937 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -858,6 +925,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E0FCDD8E2622FFCA008F6293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C07CA1DE258C48F700A198A1 /* MOSurveyOC */;
+			targetProxy = E0FCDD8D2622FFCA008F6293 /* PBXContainerItemProxy */;
+		};
 		FD10C97725F9A43500389937 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C07CA1DE258C48F700A198A1 /* MOSurveyOC */;
@@ -1041,6 +1113,48 @@
 			};
 			name = Release;
 		};
+		E0FCDD8F2622FFCA008F6293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WUQQBVA6S;
+				INFOPLIST_FILE = MOSurveyOCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaoyan.MOSurveyOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOSurveyOC.app/MOSurveyOC";
+			};
+			name = Debug;
+		};
+		E0FCDD902622FFCA008F6293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WUQQBVA6S;
+				INFOPLIST_FILE = MOSurveyOCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaoyan.MOSurveyOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOSurveyOC.app/MOSurveyOC";
+			};
+			name = Release;
+		};
 		FD10C97825F9A43500389937 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D408104E0D815A00784C153A /* Pods-MOSurveyOCUITests.debug.xcconfig */;
@@ -1100,6 +1214,15 @@
 			buildConfigurations = (
 				C07CA1F9258C48FA00A198A1 /* Debug */,
 				C07CA1FA258C48FA00A198A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0FCDD912622FFCA008F6293 /* Build configuration list for PBXNativeTarget "MOSurveyOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0FCDD8F2622FFCA008F6293 /* Debug */,
+				E0FCDD902622FFCA008F6293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

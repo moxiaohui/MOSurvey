@@ -44,6 +44,16 @@
                </Test>
             </SkippedTests>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E0FCDD872622FFCA008F6293"
+               BuildableName = "MOSurveyOCTests.xctest"
+               BlueprintName = "MOSurveyOCTests"
+               ReferencedContainer = "container:MOSurveyOC.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

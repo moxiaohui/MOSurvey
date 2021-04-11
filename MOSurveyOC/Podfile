@@ -12,7 +12,5 @@ end
 
 target 'MOSurveyOCUITests' do
   use_frameworks!
-  source 'http://git.code.oa.com/TencentVideoShared/VideoBase.git'
-  pod 'OCMock', '0.1.2'
-  pod 'OCHamcrest', '0.1.1'
+  pod 'OCMock', '~> 3.8.1'
 end
