@@ -13,17 +13,20 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MOPerson : NSObject
 
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, strong) NSArray <MOPerson *>*childens;
+@property (nonatomic, strong) NSMutableArray <MOPerson *>*childens;
 
 // 非对象类型 set:nil 会触发 `setNilValueForKey:`
 @property (nonatomic, assign) BOOL hidden;
-@property (nonatomic, strong) NSNumber *age;
+@property (nonatomic, assign) NSUInteger age;
 
 + (instancetype)personWithName:(NSString *)name;
 
 /*  以下，OCMock Demo 使用 */
 - (void)loadFriendsWithError:(NSError **)error;
 - (void)deviceWithComplete:(void(^)(NSString *value))complete;
+- (void)addChilden:(MOPerson * _Nullable)person;
+- (BOOL)takeMoney:(NSUInteger *)money;
+- (void)changeWithSelector:(SEL)selector;
 
 @end
 

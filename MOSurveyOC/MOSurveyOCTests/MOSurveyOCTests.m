@@ -138,5 +138,41 @@
     // OCMVerify(atMost(n),  [partialMock doStuff]);
 }
 
+- (void)testArgumentConstraints {
+    MOPerson *aPerson = [[MOPerson alloc] init];
+    id mock = OCMPartialMock(aPerson);
+    
+    // 4、Argument constraints 参数约束
+    
+    // 4.1、any约束
+    // 模拟方法，参数模拟任何对象
+    OCMStub([mock addChilden:[OCMArg any]]);
+    // 模拟方法，参数模拟任何指针
+    OCMStub([mock takeMoney:[OCMArg anyPointer]]);
+    // 模拟方法，参数模拟任何选择子
+    OCMStub([mock changeWithSelector:[OCMArg anySelector]]);
+
+    // 4.2、忽视没有对象参数
+    // 该方法忽视非对象参数
+    OCMStub([mock setAge:0]).ignoringNonObjectArgs();
+
+    // 4.3、匹配参数
+    MOPerson *bPerson = [[MOPerson alloc] init];
+    OCMStub([mock addChilden:bPerson]);
+    OCMStub([mock addChilden:[OCMArg isNil]]);
+    OCMStub([mock addChilden:[OCMArg isNotNil]]);
+    OCMStub([mock addChilden:[OCMArg isNotEqual:bPerson]]);
+    OCMStub([mock addChilden:[OCMArg isKindOfClass:[MOPerson class]]]);
+    
+    SEL aSelector = @selector(addChilden:);
+    OCMStub([mock addChilden:[OCMArg checkWithSelector:aSelector onObject:bPerson]]);
+    
+    OCMStub([mock addChilden:[OCMArg checkWithBlock:^BOOL(id value) {
+        /* return YES if value is ok */
+        return YES;
+    }]]);
+    
+}
+
 
 @end

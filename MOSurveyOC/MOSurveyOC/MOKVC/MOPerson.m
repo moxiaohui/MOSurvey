@@ -9,7 +9,9 @@
 #import "MOPerson.h"
 
 @interface MOPerson()
+
 @property (nonatomic, strong) NSArray *names;
+
 @end
 
 @implementation MOPerson {
@@ -102,6 +104,7 @@
   self = [super init];
   if (self) {
     self.names = @[@"mo1", @"mo2", @"mo3"];
+    self.childens = [NSMutableArray array];
 //    _name = @"_name";
 //    _isName = @"_isName";
 //    name = @"name";
@@ -188,9 +191,16 @@
     complete(@"iwatch");
 }
 
-//- (void)deviceWithKey:(NSString *)key result:(void(^)(NSString *value))complete {
-//  NSDictionary *dic = @{@"mac1":@"device1"};
-//  complete(dic[key]);
-//}
+- (void)addChilden:(MOPerson * _Nullable)person {
+//    [self.childens addObject:person];
+}
+- (BOOL)takeMoney:(NSUInteger *)money {
+    *money = 100; // 解引用后进行赋值
+    return YES;
+}
+
+- (void)changeWithSelector:(SEL)selector {
+    
+}
 
 @end
