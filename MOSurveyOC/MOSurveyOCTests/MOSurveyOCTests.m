@@ -7,6 +7,7 @@
 
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
+#import <OCHamcrest/OCHamcrest.h>
 
 #import "MOPerson.h"
 #import "MOTitleLineView.h"
@@ -145,18 +146,17 @@
     // 4、Argument constraints 参数约束
     
     // 4.1、any约束
-    // 模拟方法，参数模拟任何对象
-    OCMStub([mock addChilden:[OCMArg any]]);
-    // 模拟方法，参数模拟任何指针
-    OCMStub([mock takeMoney:[OCMArg anyPointer]]);
-    // 模拟方法，参数模拟任何选择子
-    OCMStub([mock changeWithSelector:[OCMArg anySelector]]);
+    // 为方法添加stub，可以响应任何调用
+    OCMStub([mock addChilden:[OCMArg any]]); // 参数是任何对象
+    OCMStub([mock takeMoney:[OCMArg anyPointer]]); // 参数是任何指针
+    OCMStub([mock changeWithSelector:[OCMArg anySelector]]); // 参数是任何选择子
 
     // 4.2、忽视没有对象参数
-    // 该方法忽视非对象参数
+    // 为方法添加stub，可以响应`非对象`参数的调用（可以响应参数没有通过的调用：无论是对象参数or非对象参数）
     OCMStub([mock setAge:0]).ignoringNonObjectArgs();
 
     // 4.3、匹配参数
+    // 为方法添加stub，仅响应`匹配的参数`的调用
     MOPerson *bPerson = [[MOPerson alloc] init];
     OCMStub([mock addChilden:bPerson]);
     OCMStub([mock addChilden:[OCMArg isNil]]);
@@ -164,13 +164,19 @@
     OCMStub([mock addChilden:[OCMArg isNotEqual:bPerson]]);
     OCMStub([mock addChilden:[OCMArg isKindOfClass:[MOPerson class]]]);
     
+    // 会触发 anObject 的 aSelector 方法，并将参数传入
+    // 在该方法中判断参数是否通过，通过就：返回YES， 否则：返回NO
+    id anObject = nil;
     SEL aSelector = @selector(addChilden:);
-    OCMStub([mock addChilden:[OCMArg checkWithSelector:aSelector onObject:bPerson]]);
+    OCMStub([mock addChilden:[OCMArg checkWithSelector:aSelector onObject:anObject]]);
     
     OCMStub([mock addChilden:[OCMArg checkWithBlock:^BOOL(id value) {
-        /* return YES if value is ok */
+        // 判断参数是否通过，通过就：返回YES， 否则：返回NO
         return YES;
     }]]);
+    
+    // 4.5、使用Hamcrest匹配 (另一个库，之后有空介绍一下)
+    OCMStub([mock addChilden:startsWith(@"foo")]);
     
 }
 

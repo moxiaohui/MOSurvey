@@ -13,6 +13,7 @@ end
 target 'MOSurveyOCTests' do
   use_frameworks!
   pod 'OCMock', '~> 3.8.1'
+  pod 'OCHamcrest', '~> 8.0'
 end
 
 target 'MOSurveyOCUITests' do
