@@ -144,19 +144,20 @@
     id mock = OCMPartialMock(aPerson);
     
     // 4、Argument constraints 参数约束
+    // Stub：存根，意思是声明这样的一个方法，这样的方法可以被调用
     
     // 4.1、any约束
-    // 为方法添加stub，可以响应任何调用
+    // stub方法，可以响应任何调用
     OCMStub([mock addChilden:[OCMArg any]]); // 参数是任何对象
     OCMStub([mock takeMoney:[OCMArg anyPointer]]); // 参数是任何指针
     OCMStub([mock changeWithSelector:[OCMArg anySelector]]); // 参数是任何选择子
 
     // 4.2、忽视没有对象参数
-    // 为方法添加stub，可以响应`非对象`参数的调用（可以响应参数没有通过的调用：无论是对象参数or非对象参数）
+    // stub方法，可以响应`非对象`参数的调用（可以响应参数没有通过的调用：无论是对象参数or非对象参数）
     OCMStub([mock setAge:0]).ignoringNonObjectArgs();
 
     // 4.3、匹配参数
-    // 为方法添加stub，仅响应`匹配的参数`的调用
+    // stub方法，仅响应`匹配的参数`的调用
     MOPerson *bPerson = [[MOPerson alloc] init];
     OCMStub([mock addChilden:bPerson]);
     OCMStub([mock addChilden:[OCMArg isNil]]);
@@ -178,6 +179,26 @@
     // 4.5、使用Hamcrest匹配 (另一个库，之后有空介绍一下)
     OCMStub([mock addChilden:startsWith(@"foo")]);
     
+}
+
+- (void)testClassMethods {
+    // 5、Mocking class methods 模拟类方法
+    
+    // 5.1、Stub类方法
+    id classMock = OCMClassMock([MOPerson class]);
+    OCMStub([classMock mo_className]).andReturn(@"XXMOPerson");
+    
+    // 如果实例方法有跟需要Stub的类方法同名的，需要使用以下方法进行Stub
+    OCMStub(ClassMethod([classMock mo_className])).andReturn(@"MOMOPerson");
+    MOPerson *p = [[MOPerson alloc] init];
+    NSString *instanceName = [p mo_className];
+    NSString *className = [MOPerson mo_className];
+//    NSString *result = [MOPerson mo_className];
+//    NSLog(@"result: %@", result);
+    
+    // 5.2、验证类方法已执行
+    [MOPerson mo_className];
+    OCMVerify([classMock mo_className]);
 }
 
 

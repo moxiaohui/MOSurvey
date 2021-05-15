@@ -27,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addChilden:(MOPerson * _Nullable)person;
 - (BOOL)takeMoney:(NSUInteger *)money;
 - (void)changeWithSelector:(SEL)selector;
+- (NSString *)mo_className;
++ (NSString *)mo_className;
 
 @end
 

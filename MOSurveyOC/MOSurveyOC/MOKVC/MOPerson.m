@@ -203,4 +203,12 @@
     
 }
 
+- (NSString *)mo_className {
+    return [NSString stringWithFormat:@"instance %@", NSStringFromClass(self.class)];
+}
+
++ (NSString *)mo_className {
+    return [NSString stringWithFormat:@"class %@", NSStringFromClass(self)];
+}
+
 @end
