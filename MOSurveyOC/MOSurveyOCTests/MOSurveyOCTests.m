@@ -257,6 +257,13 @@
     [strictPerson addChilden:nil];
 }
 
+- (void)testObserveMocks {
+    // 8、Observer mocks 观察者模拟
+    // 从OCMock 3.8开始不推荐使用观察者模拟。请改用XCTNSNotificationExpectation
+}
 
+- (void)advancedTopics {
+    
+}
 
 @end
