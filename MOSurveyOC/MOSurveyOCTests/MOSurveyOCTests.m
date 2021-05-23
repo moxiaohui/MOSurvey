@@ -262,8 +262,64 @@
     // 从OCMock 3.8开始不推荐使用观察者模拟。请改用XCTNSNotificationExpectation
 }
 
-- (void)advancedTopics {
+- (void)testAdvancedTopics {
+    // 9、进阶主题
+    // 9.1、快速失败的常规模拟(OCMock3.3开始支持)
+    id mockPerson = OCMClassMock([MOPerson class]);
+    OCMReject([mockPerson mo_className]);
+    //在这种情况下，模拟将接受除以下之外的所有方法someMethod：如果调用该模拟，则将引发异常。???????
+    
+    // 9.2、重新验证失败后快速抛出异常
+    // 在快速失败模式下，异常可能不会导致测试失败（如：当方法的调用堆栈未在测试中结束时）
+    // OCMerifyAll调用时，快速失败异常将重新引发，可以确保检测到来自通知等不需要的调用
+    
+    // 9.3、Stub创建对象的方法
+    MOPerson *myPerson = [[MOPerson alloc] init];
+    OCMStub([mockPerson copy]).andReturn(myPerson);
+    // 会根据方法名，自动返回对象的：alloc、new、copy、mutableCopy (引用计数)
+    
+    // 注意：init方法无法Stub，因为该方法是由模拟本身实现的。
+    // 当init方法再次被调用时，会直接返回`模拟对象self`
+    // 这样就可以有效的对alloc、init进行Stub
+    
+    // 9.4、基于实现的方法交换(method swizzling)
+    MOPerson *person = [[MOPerson alloc] init];
+    id partialMockPerson = OCMPartialMock(person);
+    OCMStub([partialMockPerson mo_className]).andCall(myPerson, @selector(name));
+    // 方法的名称可以不同，但是签名应该相同
+    
+    // 9.5、打破保留周期
+    [mockPerson stopMocking];
+    [partialMockPerson stopMocking];
+    
+    // 9.6、禁用短语法
+    // 禁用 没有前缀的宏：ClassMethod()、atLeast()、...
+    // 用有前缀的宏：OCMClassMethod()、OCMAtLeast()、...
+    
+    // 9.7、停止为特定类创建模拟(OCMock3.8开始支持)
+    // 一些框架在运行时动态更改对象的类。OCMock这样做是为了实现部分模拟，并且Foundation框架将更改类作为(KVO)机制的一部分。
+    // 如果不仔细协调，可能会导致意外行为或crash。
+    // OCMock知道KVO，并小心避免与之发生冲突
+    // 对于其它框架，OCMock仅提供了一种选择退出模拟以免发生意外行为的机制
+//
+//    + (BOOL)supportsMocking:(NSString **)reason {
+//        *reason = @"Don't want to be mocked."
+//        return NO;
+//    }
+    // 通过实现上面的方法，一个类可以选择不被Mock。
+    // 当开发人员尝试为此类创建模拟程序时，将引发异常，解释问题说在
+    // 该方法在单独调用中返回不同的值是可以接受的，这使它在运行时对特定条件做出反应
+    // 如果该方法为reason赋值，返回值将被忽略
+    
+    // 对于所有未实现此方法的类，OCMock假定可以接受Mock
+    
+    // 9.8、检查部分Mock(OCMock3.8开始支持)
+    BOOL isPartialMockObj = OCMIsSubclassOfMockClass(objc_getClass(partialMockPerson));
+    
+    
     
 }
+
+
 
 @end
