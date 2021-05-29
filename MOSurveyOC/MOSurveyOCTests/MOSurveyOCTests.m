@@ -7,6 +7,7 @@
 
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
+#import <objc/runtime.h>
 #import <OCHamcrest/OCHamcrest.h>
 
 #import "MOPerson.h"
@@ -264,7 +265,7 @@
 
 - (void)testAdvancedTopics {
     // 9、进阶主题
-    // 9.1、快速失败的常规模拟(OCMock3.3开始支持)
+    // 9.1、快速失败的常规模拟 (需要OCMock3.3)
     id mockPerson = OCMClassMock([MOPerson class]);
     OCMReject([mockPerson mo_className]);
     //在这种情况下，模拟将接受除以下之外的所有方法someMethod：如果调用该模拟，则将引发异常。???????
@@ -282,7 +283,7 @@
     // 当init方法再次被调用时，会直接返回`模拟对象self`
     // 这样就可以有效的对alloc、init进行Stub
     
-    // 9.4、基于实现的方法交换(method swizzling)
+    // 9.4、基于实现的方法交换 (method swizzling)
     MOPerson *person = [[MOPerson alloc] init];
     id partialMockPerson = OCMPartialMock(person);
     OCMStub([partialMockPerson mo_className]).andCall(myPerson, @selector(name));
@@ -296,7 +297,7 @@
     // 禁用 没有前缀的宏：ClassMethod()、atLeast()、...
     // 用有前缀的宏：OCMClassMethod()、OCMAtLeast()、...
     
-    // 9.7、停止为特定类创建模拟(OCMock3.8开始支持)
+    // 9.7、停止为特定类创建模拟 (需要OCMock3.8)
     // 一些框架在运行时动态更改对象的类。OCMock这样做是为了实现部分模拟，并且Foundation框架将更改类作为(KVO)机制的一部分。
     // 如果不仔细协调，可能会导致意外行为或crash。
     // OCMock知道KVO，并小心避免与之发生冲突
@@ -313,10 +314,83 @@
     
     // 对于所有未实现此方法的类，OCMock假定可以接受Mock
     
-    // 9.8、检查部分Mock(OCMock3.8开始支持)
-    BOOL isPartialMockObj = OCMIsSubclassOfMockClass(objc_getClass(partialMockPerson));
+    // 9.8、检查部分Mock (需要OCMock3.8)
+    // 判断是否 是部分模拟对象
+    // BOOL isPartialMockObj = OCMIsSubclassOfMockClass(objc_getClass(partialMockPerson)); //???报错？
+}
+
+- (void)testLimitations {
+    // 10、局限性
     
+    // 10.1、一次只能有一个Mock可以在给定类上存根方法
+    // don't do this
+//    id mock1 = OCMClassMock([SomeClass class]);
+//    OCMStub([mock1 aClassMethod]);
+//    id mock2 = OCMClassMock([SomeClass class]);
+//    OCMStub([mock2 anotherClassMethod]);
+    // 如果添加了存根类方法的模拟对象未释放，则存根方法将持续存在，即使在测试中也是如此。如果多个模拟对象同时操作同一类，则行为将不可预测。
     
+    // 10.2、期望Stub方法无效
+//    id mock = OCMStrictClassMock([SomeClass class]);
+//    OCMStub([mock someMethod]).andReturn(@"a string");
+//    OCMExpect([mock someMethod]);
+    // 由于当前实现了模拟对象的方法，Stub会处理所有对它的调用。意味着即使调用了该方法，验证也会失败
+    // 避免此问题：
+    // 方法1：通过andReturn在Expect语句中添加
+    // 方法2：在设置期望之后存根
+    
+    // 10.3、不能为某些特殊类创建部分模拟
+    id partialMockForString = OCMPartialMock(@"Foo"); // 会抛出异常
+    
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:0];
+    id partialMockForDate = OCMPartialMock(date); // 会对一些架构造成影响吗
+    // 无法为 toll-free bridged 类的实例创建局部模拟
+    // 无法为 某些实例创建以标记指针表示的对象，如：NSString、在某些体系结构上、NSDate在某些体系结构上
+
+    // 10.4、某些方法无法存根或验证
+//    id partialMockForString = OCMPartialMock(anObject);
+//    OCMStub([partialMock class]).andReturn(someOtherClass); // will not work
+    // 无法模拟许多核心运行时方法。包括：init、class、methodSignatureForSelector:、forwardInvocation:、respondsToSelector等等
+    
+    // 10.5、NSString和NSArray上的类方法无法存根或验证
+    //id stringMock = OCMClassMock([NSString class]);
+    // 无法生效、该方法将不会被存根
+    //OCMStub([stringMock stringWithContentsOfFile:[OCMArg any] encoding:NSUTF8StringEncoding error:[OCMArg setTo:nil]]);
+    // 无法在NSString和NSArray上存根或验证类方法。尝试这样做没有任何效果。
+    
+    // 10.6、NSManagedObject的类方法及其子类无法存根或验证
+    //id mock = OCMClassMock([MyManagedObject class]);
+    // 无法生效、该方法将不会被存根
+    //OCMStub([mock someClassMethod]).andReturn(nil);
+    // 无法在其NSManagedObject或其子类上存根或验证类方法。尝试这样做没有任何效果。
+    
+    // 10.7、无法验证 NSObject 上的方法
+    id mock = OCMClassMock([NSObject class]);
+    /* run code under test, which calls awakeAfterUsingCoder: */
+    OCMVerify([mock awakeAfterUsingCoder:[OCMArg any]]); // still fails
+    // 不可能使用在 NSObject 中实现的方法或其上的类别进行运行后验证。
+    // 在某些情况下，可以对方法进行存根，然后对其进行验证。
+    // 当方法在子类中被覆盖时，可以使用运行后验证。
+        
+    // 10.8、无法验证核心 Apple 类中的私有方法
+    // UIWindow *window = /* get window somehow */
+    // id mock = OCMPartialMock(window);
+    /* run code under test, which causes _sendTouchesForEvent: to be invoked */
+    // OCMVerify([mock _sendTouchesForEvent:[OCMArg any]]); // still fails
+    // 不可能在核心 Apple 类中使用私有方法运行后验证。
+    // 具体来说，在以 NS 或 UI 作为前缀的类中，所有带有下划线前缀和/或后缀的方法。
+    // 在某些情况下，可以对方法进行存根，然后对其进行验证。
+    
+    // 10.9、运行后验证不能使用延迟
+    // 目前无法验证具有延迟的方法。这目前只能使用下面在严格模拟和期望中描述的expect-run-verify方法。
+    
+
+    // 10.10、测试中使用多线程
+    // OCMock 不是完全线程安全的。直到 3.2.x 版本 OCMock 根本不知道线程。来自多个线程的模拟对象上的任何操作组合都可能导致问题并使测试失败
+    
+    // 从 OCMock 3.3 开始，仍然需要从单个线程调用所有设置和验证操作，最好是测试运行程序的主线程。
+    // 但是，可以从多个线程使用模拟对象。模拟对象甚至可以在不同的线程中使用，而其设置在主线程中继续进行。
+    // 有关详细信息，请参阅#235和#328。
     
 }
 
