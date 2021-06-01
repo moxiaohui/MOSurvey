@@ -80,7 +80,6 @@
 //    });
 
     // 2.5、模拟 通过参数返回值的方法 的返回值 Returning values in pass-by-reference arguments
-    // Invoking block arguments：
     // 2.5.1、对象参数
     // 模拟 应该返回的参数值
     NSError *error = [NSError errorWithDomain:@"获取friends失败(stubbed)" code:001 userInfo:nil];
@@ -353,7 +352,7 @@
 }
 
 - (void)testLimitations {
-    // 10、局限性
+    // 10、局限性 Limitations
 
     // 10.1、一次只能有一个Mock可以在给定类上存根方法
     // don't do this
