@@ -1,6 +1,6 @@
 //
-//  MOSurveyOCTests.m
-//  MOSurveyOCTests
+//  MOSurveyOCMockTests.m
+//  MOSurveyOCMockTests
 //
 //  Created by 莫小言 on 2021/4/11.
 //
@@ -13,11 +13,11 @@
 #import "MOPerson.h"
 #import "MOTitleLineView.h"
 
-@interface MOSurveyOCTests : XCTestCase
+@interface MOSurveyOCMockTests : XCTestCase
 
 @end
 
-@implementation MOSurveyOCTests
+@implementation MOSurveyOCMockTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
