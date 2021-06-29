@@ -15,12 +15,13 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupView()
-    test()
+//    test()
   }
   
   private func setupView() {
     let section0 = [
       MOCellModel("View Test", "MOViewTestViewController"),
+      MOCellModel("UITests", "MOUITestsViewController"),
       MOCellModel("TableViewStyle", "MOTableViewStyleViewController"),
       MOCellModel("ShareDocument", "MOShareDocumentViewController"),
       MOCellModel("MultiDelegate", "MOMultiDelegateViewController"),
@@ -31,7 +32,6 @@ class ViewController: UIViewController {
       MOCellModel("WKWebView", "MOWKWebViewController"),
       MOCellModel("Apple Pay(TODO)", "MOApplePayViewController"),
       MOCellModel("TouchID", "MOTouchIDViewController"),
-      MOCellModel("UnitTests", "MOTestsViewController"),
 //      MOCellModel("文件分享", "MOShareDocumentVC")
     ]
     let section1 = [MOCellModel("文件操作", { [weak self] in

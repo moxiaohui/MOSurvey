@@ -1,5 +1,5 @@
 //
-//  MOTestsViewControllerTests.swift
+//  MOUnitTests.swift
 //  MOSurveySwiftTests
 //
 //  Created by MikiMo on 2021/3/20.
@@ -14,12 +14,12 @@ import XCTest
 // https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/04-writing_tests.html
 // OC 的可以用分类在这里，再次声明一下就可以测试了
 
-class MOTestsViewControllerTests: XCTestCase {
+class MOUnitTests: XCTestCase {
 
     let subscribeButton = UIButton(type: .custom)
     var subscribeButton2 : UIButton? = nil
-    let vc: MOTestsViewController = {
-        let vc = MOTestsViewController()
+    let vc: MOUITestsViewController = {
+        let vc = MOUITestsViewController()
         return vc
     }()
     let delegate: UITableViewDataSource? = nil
@@ -120,8 +120,8 @@ class MOTestsViewControllerTests: XCTestCase {
     func testKVOExpectation() {
         self.vc.title = "xixi"
         let expectation = XCTKVOExpectation(keyPath: "title", object: self.vc)
-        expectation.handler = { (observedObject, change) in
-            guard let observedObject = observedObject as? MOTestsViewController else {
+        expectation.handler = { (observedObject, change) -> Bool in
+            guard let observedObject = observedObject as? MOUITestsViewController else {
                 return false
             }
             return observedObject.title == "hehe"

@@ -1,14 +1,14 @@
 //
-//  MOTestsViewControllerUITests.swift
+//  MOUITestsViewControllerUITests.swift
 //  MOSurveySwiftUITests
 //
 //  Created by MikiMo on 2021/3/27.
 //
 
 import XCTest
-@testable import MOSurveySwift
+//@testable import MOSurveySwift
 
-class MOTestsViewControllerUITests: XCTestCase {
+class MOUITestsViewControllerUITests: XCTestCase {
     
     // 应用程序对象
     let app: XCUIApplication = XCUIApplication()

@@ -33,14 +33,13 @@
 		C0A4BD22258CDA1D0082EC01 /* MOFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD21258CDA1D0082EC01 /* MOFileManager.swift */; };
 		C0A4BD26258CDA760082EC01 /* MOTableViewStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD25258CDA760082EC01 /* MOTableViewStyleViewController.swift */; };
 		C0A4BD29258CDACD0082EC01 /* MOAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4BD28258CDACC0082EC01 /* MOAlgorithm.swift */; };
-		E0654FA0260A35AE002F0E93 /* MOSurveySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0654F9F260A35AE002F0E93 /* MOSurveySwiftUITests.swift */; };
 		E0654FAB260A37CA002F0E93 /* MOPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0654FAA260A37CA002F0E93 /* MOPerson.swift */; };
-		FD3D64E52605D73C0056D3FD /* MOSurveySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64E42605D73C0056D3FD /* MOSurveySwiftTests.swift */; };
-		FD3D64F02605D8E70056D3FD /* MOTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOTestsViewController.swift */; };
-		FD3D64F62605DCC10056D3FD /* MOTestsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64F52605DCC10056D3FD /* MOTestsViewControllerTests.swift */; };
+		FD3D64F02605D8E70056D3FD /* MOUITestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */; };
+		FD3D64F62605DCC10056D3FD /* MOUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64F52605DCC10056D3FD /* MOUnitTests.swift */; };
 		FD8A09B7260F601800618761 /* MOTestsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8A09B6260F601800618761 /* MOTestsViewControllerUITests.swift */; };
-		FD8A09BB260F611300618761 /* MOTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOTestsViewController.swift */; };
-		FD8A09C2260F62C300618761 /* MOTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOTestsViewController.swift */; };
+		FD8A09BB260F611300618761 /* MOUITestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */; };
+		FD8A09C2260F62C300618761 /* MOUITestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */; };
+		FDA75FF7268B38F6007AFB1E /* MOUITestDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA75FF6268B38F6007AFB1E /* MOUITestDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,15 +89,14 @@
 		C0A4BD25258CDA760082EC01 /* MOTableViewStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTableViewStyleViewController.swift; sourceTree = "<group>"; };
 		C0A4BD28258CDACC0082EC01 /* MOAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAlgorithm.swift; sourceTree = "<group>"; };
 		E0654F9D260A35AE002F0E93 /* MOSurveySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOSurveySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0654F9F260A35AE002F0E93 /* MOSurveySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOSurveySwiftUITests.swift; sourceTree = "<group>"; };
 		E0654FA1260A35AE002F0E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0654FAA260A37CA002F0E93 /* MOPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOPerson.swift; sourceTree = "<group>"; };
 		FD3D64E22605D73C0056D3FD /* MOSurveySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOSurveySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD3D64E42605D73C0056D3FD /* MOSurveySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOSurveySwiftTests.swift; sourceTree = "<group>"; };
 		FD3D64E62605D73C0056D3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD3D64EF2605D8E70056D3FD /* MOTestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTestsViewController.swift; sourceTree = "<group>"; };
-		FD3D64F52605DCC10056D3FD /* MOTestsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTestsViewControllerTests.swift; sourceTree = "<group>"; };
+		FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUITestsViewController.swift; sourceTree = "<group>"; };
+		FD3D64F52605DCC10056D3FD /* MOUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUnitTests.swift; sourceTree = "<group>"; };
 		FD8A09B6260F601800618761 /* MOTestsViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTestsViewControllerUITests.swift; sourceTree = "<group>"; };
+		FDA75FF6268B38F6007AFB1E /* MOUITestDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUITestDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,8 +206,8 @@
 		E0654F9E260A35AE002F0E93 /* MOSurveySwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E0654F9F260A35AE002F0E93 /* MOSurveySwiftUITests.swift */,
 				FD8A09B6260F601800618761 /* MOTestsViewControllerUITests.swift */,
+				FDA75FF6268B38F6007AFB1E /* MOUITestDemo.swift */,
 				E0654FA1260A35AE002F0E93 /* Info.plist */,
 			);
 			path = MOSurveySwiftUITests;
@@ -218,8 +216,7 @@
 		FD3D64E32605D73C0056D3FD /* MOSurveySwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				FD3D64E42605D73C0056D3FD /* MOSurveySwiftTests.swift */,
-				FD3D64F52605DCC10056D3FD /* MOTestsViewControllerTests.swift */,
+				FD3D64F52605DCC10056D3FD /* MOUnitTests.swift */,
 				FD3D64E62605D73C0056D3FD /* Info.plist */,
 			);
 			path = MOSurveySwiftTests;
@@ -228,7 +225,7 @@
 		FD3D64EE2605D8280056D3FD /* MOTests */ = {
 			isa = PBXGroup;
 			children = (
-				FD3D64EF2605D8E70056D3FD /* MOTestsViewController.swift */,
+				FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */,
 				E0654FAA260A37CA002F0E93 /* MOPerson.swift */,
 			);
 			path = MOTests;
@@ -368,7 +365,7 @@
 				C0A4BD07258CD6720082EC01 /* MOCalendarViewController.swift in Sources */,
 				C0A4BC45258C98290082EC01 /* MOApplePayViewController.swift in Sources */,
 				C0A4BCCB258CC7C40082EC01 /* MOPopViewController.swift in Sources */,
-				FD3D64F02605D8E70056D3FD /* MOTestsViewController.swift in Sources */,
+				FD3D64F02605D8E70056D3FD /* MOUITestsViewController.swift in Sources */,
 				C0A4BD29258CDACD0082EC01 /* MOAlgorithm.swift in Sources */,
 				C07CA3AB258C932900A198A1 /* MOTouchIDViewController.swift in Sources */,
 				C0A4BC90258CB9FB0082EC01 /* MOWKWebViewController.swift in Sources */,
@@ -396,9 +393,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD8A09BB260F611300618761 /* MOTestsViewController.swift in Sources */,
+				FDA75FF7268B38F6007AFB1E /* MOUITestDemo.swift in Sources */,
+				FD8A09BB260F611300618761 /* MOUITestsViewController.swift in Sources */,
 				FD8A09B7260F601800618761 /* MOTestsViewControllerUITests.swift in Sources */,
-				E0654FA0260A35AE002F0E93 /* MOSurveySwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,9 +403,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD8A09C2260F62C300618761 /* MOTestsViewController.swift in Sources */,
-				FD3D64F62605DCC10056D3FD /* MOTestsViewControllerTests.swift in Sources */,
-				FD3D64E52605D73C0056D3FD /* MOSurveySwiftTests.swift in Sources */,
+				FD8A09C2260F62C300618761 /* MOUITestsViewController.swift in Sources */,
+				FD3D64F62605DCC10056D3FD /* MOUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
