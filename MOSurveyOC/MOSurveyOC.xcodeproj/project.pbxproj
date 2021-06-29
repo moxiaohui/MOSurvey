@@ -80,6 +80,8 @@
 		E0FCDD8B2622FFCA008F6293 /* MOSurveyOCMockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FCDD8A2622FFCA008F6293 /* MOSurveyOCMockTests.m */; };
 		FD10C97425F9A43500389937 /* MOSurveyOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD10C97325F9A43500389937 /* MOSurveyOCUITests.m */; };
 		FDA75FEE268ACDD7007AFB1E /* MOPerson+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA75FED268ACDD7007AFB1E /* MOPerson+Tests.m */; };
+		FDA75FF0268ACFA5007AFB1E /* MOOCMockDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA75FEF268ACFA5007AFB1E /* MOOCMockDemoTests.m */; };
+		FDA75FF3268ACFB6007AFB1E /* MOOCMockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA75FF2268ACFB6007AFB1E /* MOOCMockDemo.m */; };
 		FDB8AB0E2655050E0001DD11 /* MOMarsRoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB8AB0D2655050E0001DD11 /* MOMarsRoverTests.m */; };
 		FDB8AB14265507F20001DD11 /* MOMarsRover.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB8AB13265507F20001DD11 /* MOMarsRover.m */; };
 /* End PBXBuildFile section */
@@ -245,6 +247,9 @@
 		FD10C99425F9C12800389937 /* OCHamcrest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OCHamcrest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA75FEC268ACDD7007AFB1E /* MOPerson+Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MOPerson+Tests.h"; sourceTree = "<group>"; };
 		FDA75FED268ACDD7007AFB1E /* MOPerson+Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MOPerson+Tests.m"; sourceTree = "<group>"; };
+		FDA75FEF268ACFA5007AFB1E /* MOOCMockDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOOCMockDemoTests.m; sourceTree = "<group>"; };
+		FDA75FF1268ACFB6007AFB1E /* MOOCMockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOOCMockDemo.h; sourceTree = "<group>"; };
+		FDA75FF2268ACFB6007AFB1E /* MOOCMockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOOCMockDemo.m; sourceTree = "<group>"; };
 		FDB8AB0D2655050E0001DD11 /* MOMarsRoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOMarsRoverTests.m; sourceTree = "<group>"; };
 		FDB8AB12265507F20001DD11 /* MOMarsRover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOMarsRover.h; sourceTree = "<group>"; };
 		FDB8AB13265507F20001DD11 /* MOMarsRover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOMarsRover.m; sourceTree = "<group>"; };
@@ -617,6 +622,7 @@
 			children = (
 				E0FCDD8A2622FFCA008F6293 /* MOSurveyOCMockTests.m */,
 				FDB8AB0D2655050E0001DD11 /* MOMarsRoverTests.m */,
+				FDA75FEF268ACFA5007AFB1E /* MOOCMockDemoTests.m */,
 				E0FCDD8C2622FFCA008F6293 /* Info.plist */,
 			);
 			path = MOSurveyOCTests;
@@ -650,6 +656,8 @@
 				FDA75FED268ACDD7007AFB1E /* MOPerson+Tests.m */,
 				FDB8AB12265507F20001DD11 /* MOMarsRover.h */,
 				FDB8AB13265507F20001DD11 /* MOMarsRover.m */,
+				FDA75FF1268ACFB6007AFB1E /* MOOCMockDemo.h */,
+				FDA75FF2268ACFB6007AFB1E /* MOOCMockDemo.m */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -933,6 +941,7 @@
 				C07CA1E4258C48F700A198A1 /* AppDelegate.m in Sources */,
 				C0BFAC6F25AFDC300073CCF0 /* MOProxy.m in Sources */,
 				C0A4BC87258CB6DB0082EC01 /* UIImage+image.m in Sources */,
+				FDA75FF3268ACFB6007AFB1E /* MOOCMockDemo.m in Sources */,
 				C0A4BC6F258CABEC0082EC01 /* MOResponderViewController.m in Sources */,
 				C0A4BE0B258CE3A00082EC01 /* NSMutableArray+Swizzling.m in Sources */,
 				C0A4BE06258CE3A00082EC01 /* UINavigationItem+Swizzling.m in Sources */,
@@ -966,6 +975,7 @@
 			files = (
 				FDB8AB0E2655050E0001DD11 /* MOMarsRoverTests.m in Sources */,
 				E0FCDD8B2622FFCA008F6293 /* MOSurveyOCMockTests.m in Sources */,
+				FDA75FF0268ACFA5007AFB1E /* MOOCMockDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

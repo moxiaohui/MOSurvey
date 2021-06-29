@@ -9,7 +9,7 @@
 
 @implementation MOPerson (Tests)
 
-#pragma mark - 以下，OCMock Demo 使用
+#pragma mark - 以下，OCMock Tests 使用
 
 - (void)loadFriendsWithError:(NSError **)error {
     *error = [NSError errorWithDomain:@"获取friends失败" code:001 userInfo:nil];
@@ -37,6 +37,24 @@
 
 + (NSString *)mo_className {
     return [NSString stringWithFormat:@"class %@", NSStringFromClass(self)];
+}
+
+#pragma mark - 以下，OCMock Demo 使用
+
++ (MOPerson * _Nullable)personWithInfo:(NSDictionary * _Nullable)info {
+    if (!info || info.allKeys.count == 0) {
+        return nil;
+    }
+    MOPerson *person = [[MOPerson alloc] init];
+    person.name = [info objectForKey:@"name"];
+    return person;
+}
+
+- (BOOL)isValid {
+    if (self.name) {
+        return YES;
+    }
+    return NO;
 }
 
 @end
