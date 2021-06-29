@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     setupView()
 //    test()
+    navigationController?.pushViewController(MOUITestsViewController(), animated: true)
   }
   
   private func setupView() {

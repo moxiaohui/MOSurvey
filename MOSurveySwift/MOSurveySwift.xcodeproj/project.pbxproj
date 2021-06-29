@@ -39,7 +39,6 @@
 		FD8A09B7260F601800618761 /* MOTestsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8A09B6260F601800618761 /* MOTestsViewControllerUITests.swift */; };
 		FD8A09BB260F611300618761 /* MOUITestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */; };
 		FD8A09C2260F62C300618761 /* MOUITestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */; };
-		FDA75FF7268B38F6007AFB1E /* MOUITestDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA75FF6268B38F6007AFB1E /* MOUITestDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +95,6 @@
 		FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUITestsViewController.swift; sourceTree = "<group>"; };
 		FD3D64F52605DCC10056D3FD /* MOUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUnitTests.swift; sourceTree = "<group>"; };
 		FD8A09B6260F601800618761 /* MOTestsViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTestsViewControllerUITests.swift; sourceTree = "<group>"; };
-		FDA75FF6268B38F6007AFB1E /* MOUITestDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUITestDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				FD8A09B6260F601800618761 /* MOTestsViewControllerUITests.swift */,
-				FDA75FF6268B38F6007AFB1E /* MOUITestDemo.swift */,
 				E0654FA1260A35AE002F0E93 /* Info.plist */,
 			);
 			path = MOSurveySwiftUITests;
@@ -393,7 +390,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDA75FF7268B38F6007AFB1E /* MOUITestDemo.swift in Sources */,
 				FD8A09BB260F611300618761 /* MOUITestsViewController.swift in Sources */,
 				FD8A09B7260F601800618761 /* MOTestsViewControllerUITests.swift in Sources */,
 			);
