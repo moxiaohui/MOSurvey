@@ -21,6 +21,8 @@ typedef NS_ENUM(NSInteger, MOMarsRoverOrientation) {
     MOMarsRoverOrientationEast,  // 东
 };
 
+/// 火星车
+/// 问题描述：MOSurvey/MOSurveyOC/MOSurveyOC/UnitTests/TDD练习：火星车问题
 @interface MOMarsRover : NSObject
 
 @property (nonatomic, assign, readonly) CGSize size;

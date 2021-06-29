@@ -1,21 +1,22 @@
 //
-//  MOTDDTests.m
+//  MOMarsRoverTests.m
 //  MOSurveyOCMockTests
 //
 //  Created by MikiMo on 2021/5/19.
 //
+//  TDD: Test-Driven Development 测试驱动开发 课程
 
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
 #import "MOMarsRover.h"
 
-@interface MOTDDTests : XCTestCase
+@interface MOMarsRoverTests : XCTestCase
 
 @property (nonatomic, strong) MOMarsRover *rover;
 
 @end
 
-@implementation MOTDDTests
+@implementation MOMarsRoverTests
 
 - (void)setUp {
     self.rover = [[MOMarsRover alloc] initWithSize:CGSizeMake(100, 100)

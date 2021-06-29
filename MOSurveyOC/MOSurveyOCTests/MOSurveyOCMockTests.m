@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "MOPerson.h"
+#import "MOPerson+Tests.h"
 #import "MOTitleLineView.h"
 
 @interface MOSurveyOCMockTests : XCTestCase
