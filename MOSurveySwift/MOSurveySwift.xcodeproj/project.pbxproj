@@ -42,7 +42,6 @@
 		FD8A09B7260F601800618761 /* MOTestsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8A09B6260F601800618761 /* MOTestsViewControllerUITests.swift */; };
 		FD8A09BB260F611300618761 /* MOUITestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */; };
 		FD8A09C2260F62C300618761 /* MOUITestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */; };
-		FDDF02E2269ECBA0005F9ADF /* liveTopLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = FDDF02E1269ECBA0005F9ADF /* liveTopLottie.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,7 +107,6 @@
 		FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUITestsViewController.swift; sourceTree = "<group>"; };
 		FD3D64F52605DCC10056D3FD /* MOUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUnitTests.swift; sourceTree = "<group>"; };
 		FD8A09B6260F601800618761 /* MOTestsViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTestsViewControllerUITests.swift; sourceTree = "<group>"; };
-		FDDF02E1269ECBA0005F9ADF /* liveTopLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = liveTopLottie.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +205,6 @@
 				C07CA3AA258C932900A198A1 /* MOTouchIDViewController.swift */,
 				FD3D64EE2605D8280056D3FD /* MOTests */,
 				C07CA397258C917000A198A1 /* Main.storyboard */,
-				FDDF02E1269ECBA0005F9ADF /* liveTopLottie.json */,
 				C07CA39A258C917300A198A1 /* Assets.xcassets */,
 				C07CA39C258C917300A198A1 /* LaunchScreen.storyboard */,
 				C07CA39F258C917300A198A1 /* Info.plist */,
@@ -381,7 +378,6 @@
 				C0A4BC93258CBC350082EC01 /* index.html in Resources */,
 				C07CA39B258C917300A198A1 /* Assets.xcassets in Resources */,
 				C07CA399258C917000A198A1 /* Main.storyboard in Resources */,
-				FDDF02E2269ECBA0005F9ADF /* liveTopLottie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

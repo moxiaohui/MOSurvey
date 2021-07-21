@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 let cellIndentifier: String = "MOCellIndentifier"
 let headerIndentifier: String = "MOHeaderIndentifier"
 let insets = UIApplication.shared.delegate?.window??.safeAreaInsets ?? UIEdgeInsets.zero
@@ -16,9 +17,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     setupView()
 //    test()
-    navigationController?.pushViewController(MOUITestsViewController(), animated: true)
   }
-  
+
   private func setupView() {
     let section0 = [
       MOCellModel("View Test", "MOViewTestViewController"),
