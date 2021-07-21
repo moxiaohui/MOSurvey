@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D4077DB4EB17777FE2E4CBD /* Pods_MOSurveySwift_MOSurveySwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7ACBA452C8F052832163211 /* Pods_MOSurveySwift_MOSurveySwiftUITests.framework */; };
+		3E3E1E93C9E7F7BA1F704096 /* Pods_MOSurveySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6EEBD02EE5D171C6ADFEB45 /* Pods_MOSurveySwift.framework */; };
+		69719944C5F600FD01163577 /* Pods_MOSurveySwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B2C990E5545352B53B6C98 /* Pods_MOSurveySwiftTests.framework */; };
 		C07CA392258C917000A198A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07CA391258C917000A198A1 /* AppDelegate.swift */; };
 		C07CA394258C917000A198A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07CA393258C917000A198A1 /* SceneDelegate.swift */; };
 		C07CA396258C917000A198A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07CA395258C917000A198A1 /* ViewController.swift */; };
@@ -39,6 +42,7 @@
 		FD8A09B7260F601800618761 /* MOTestsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8A09B6260F601800618761 /* MOTestsViewControllerUITests.swift */; };
 		FD8A09BB260F611300618761 /* MOUITestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */; };
 		FD8A09C2260F62C300618761 /* MOUITestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */; };
+		FDDF02E2269ECBA0005F9ADF /* liveTopLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = FDDF02E1269ECBA0005F9ADF /* liveTopLottie.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02D140ABBE774E9A95DB582C /* Pods-MOSurveySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveySwift.debug.xcconfig"; path = "Target Support Files/Pods-MOSurveySwift/Pods-MOSurveySwift.debug.xcconfig"; sourceTree = "<group>"; };
+		15B2C990E5545352B53B6C98 /* Pods_MOSurveySwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOSurveySwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24DE8D52FF5E40C378B9EFDF /* Pods-MOSurveySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveySwift.release.xcconfig"; path = "Target Support Files/Pods-MOSurveySwift/Pods-MOSurveySwift.release.xcconfig"; sourceTree = "<group>"; };
+		5426103F8EA1A9E1D2C8F88E /* Pods-MOSurveySwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveySwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-MOSurveySwiftTests/Pods-MOSurveySwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F93CA2FCB2400FB784E8D7A /* Pods-MOSurveySwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveySwiftTests.release.xcconfig"; path = "Target Support Files/Pods-MOSurveySwiftTests/Pods-MOSurveySwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		A3D7AF417D6FF0DB1175EB21 /* Pods-MOSurveySwift-MOSurveySwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveySwift-MOSurveySwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-MOSurveySwift-MOSurveySwiftUITests/Pods-MOSurveySwift-MOSurveySwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5CAE76CBC56F48A4DED5D99 /* Pods-MOSurveySwift-MOSurveySwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOSurveySwift-MOSurveySwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-MOSurveySwift-MOSurveySwiftUITests/Pods-MOSurveySwift-MOSurveySwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C07CA38E258C917000A198A1 /* MOSurveySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOSurveySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07CA391258C917000A198A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C07CA393258C917000A198A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +98,8 @@
 		C0A4BD21258CDA1D0082EC01 /* MOFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOFileManager.swift; sourceTree = "<group>"; };
 		C0A4BD25258CDA760082EC01 /* MOTableViewStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTableViewStyleViewController.swift; sourceTree = "<group>"; };
 		C0A4BD28258CDACC0082EC01 /* MOAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAlgorithm.swift; sourceTree = "<group>"; };
+		C6EEBD02EE5D171C6ADFEB45 /* Pods_MOSurveySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOSurveySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7ACBA452C8F052832163211 /* Pods_MOSurveySwift_MOSurveySwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOSurveySwift_MOSurveySwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0654F9D260A35AE002F0E93 /* MOSurveySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOSurveySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0654FA1260A35AE002F0E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0654FAA260A37CA002F0E93 /* MOPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOPerson.swift; sourceTree = "<group>"; };
@@ -95,6 +108,7 @@
 		FD3D64EF2605D8E70056D3FD /* MOUITestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUITestsViewController.swift; sourceTree = "<group>"; };
 		FD3D64F52605DCC10056D3FD /* MOUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOUnitTests.swift; sourceTree = "<group>"; };
 		FD8A09B6260F601800618761 /* MOTestsViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTestsViewControllerUITests.swift; sourceTree = "<group>"; };
+		FDDF02E1269ECBA0005F9ADF /* liveTopLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = liveTopLottie.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E3E1E93C9E7F7BA1F704096 /* Pods_MOSurveySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D4077DB4EB17777FE2E4CBD /* Pods_MOSurveySwift_MOSurveySwiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,12 +132,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69719944C5F600FD01163577 /* Pods_MOSurveySwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20A60102E214A4DB881E7201 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02D140ABBE774E9A95DB582C /* Pods-MOSurveySwift.debug.xcconfig */,
+				24DE8D52FF5E40C378B9EFDF /* Pods-MOSurveySwift.release.xcconfig */,
+				A3D7AF417D6FF0DB1175EB21 /* Pods-MOSurveySwift-MOSurveySwiftUITests.debug.xcconfig */,
+				A5CAE76CBC56F48A4DED5D99 /* Pods-MOSurveySwift-MOSurveySwiftUITests.release.xcconfig */,
+				5426103F8EA1A9E1D2C8F88E /* Pods-MOSurveySwiftTests.debug.xcconfig */,
+				5F93CA2FCB2400FB784E8D7A /* Pods-MOSurveySwiftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		90F28112140CC547D8AEB970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6EEBD02EE5D171C6ADFEB45 /* Pods_MOSurveySwift.framework */,
+				C7ACBA452C8F052832163211 /* Pods_MOSurveySwift_MOSurveySwiftUITests.framework */,
+				15B2C990E5545352B53B6C98 /* Pods_MOSurveySwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C07CA385258C917000A198A1 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +169,8 @@
 				FD3D64E32605D73C0056D3FD /* MOSurveySwiftTests */,
 				E0654F9E260A35AE002F0E93 /* MOSurveySwiftUITests */,
 				C07CA38F258C917000A198A1 /* Products */,
+				20A60102E214A4DB881E7201 /* Pods */,
+				90F28112140CC547D8AEB970 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +207,7 @@
 				C07CA3AA258C932900A198A1 /* MOTouchIDViewController.swift */,
 				FD3D64EE2605D8280056D3FD /* MOTests */,
 				C07CA397258C917000A198A1 /* Main.storyboard */,
+				FDDF02E1269ECBA0005F9ADF /* liveTopLottie.json */,
 				C07CA39A258C917300A198A1 /* Assets.xcassets */,
 				C07CA39C258C917300A198A1 /* LaunchScreen.storyboard */,
 				C07CA39F258C917300A198A1 /* Info.plist */,
@@ -235,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C07CA3A2258C917300A198A1 /* Build configuration list for PBXNativeTarget "MOSurveySwift" */;
 			buildPhases = (
+				01A10B6930EDC188DCD210FB /* [CP] Check Pods Manifest.lock */,
 				C07CA38A258C917000A198A1 /* Sources */,
 				C07CA38B258C917000A198A1 /* Frameworks */,
 				C07CA38C258C917000A198A1 /* Resources */,
@@ -252,6 +296,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0654FA6260A35AE002F0E93 /* Build configuration list for PBXNativeTarget "MOSurveySwiftUITests" */;
 			buildPhases = (
+				4C5C57560054952A9A9D2AD6 /* [CP] Check Pods Manifest.lock */,
 				E0654F99260A35AE002F0E93 /* Sources */,
 				E0654F9A260A35AE002F0E93 /* Frameworks */,
 				E0654F9B260A35AE002F0E93 /* Resources */,
@@ -270,6 +315,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD3D64EB2605D73C0056D3FD /* Build configuration list for PBXNativeTarget "MOSurveySwiftTests" */;
 			buildPhases = (
+				6DCF818EFD32287143B6A565 /* [CP] Check Pods Manifest.lock */,
 				FD3D64DE2605D73C0056D3FD /* Sources */,
 				FD3D64DF2605D73C0056D3FD /* Frameworks */,
 				FD3D64E02605D73C0056D3FD /* Resources */,
@@ -335,6 +381,7 @@
 				C0A4BC93258CBC350082EC01 /* index.html in Resources */,
 				C07CA39B258C917300A198A1 /* Assets.xcassets in Resources */,
 				C07CA399258C917000A198A1 /* Main.storyboard in Resources */,
+				FDDF02E2269ECBA0005F9ADF /* liveTopLottie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +400,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01A10B6930EDC188DCD210FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MOSurveySwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C5C57560054952A9A9D2AD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MOSurveySwift-MOSurveySwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DCF818EFD32287143B6A565 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MOSurveySwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C07CA38A258C917000A198A1 /* Sources */ = {
@@ -557,18 +673,19 @@
 		};
 		C07CA3A3258C917300A198A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02D140ABBE774E9A95DB582C /* Pods-MOSurveySwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9WUQQBVA6S;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
 				INFOPLIST_FILE = MOSurveySwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = moxiaoyan.MOSurveySwift.miki;
+				PRODUCT_BUNDLE_IDENTIFIER = mikimo.MOSurveySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -578,6 +695,7 @@
 		};
 		C07CA3A4258C917300A198A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DE8D52FF5E40C378B9EFDF /* Pods-MOSurveySwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -598,6 +716,7 @@
 		};
 		E0654FA4260A35AE002F0E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3D7AF417D6FF0DB1175EB21 /* Pods-MOSurveySwift-MOSurveySwiftUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WUQQBVA6S;
@@ -618,6 +737,7 @@
 		};
 		E0654FA5260A35AE002F0E93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5CAE76CBC56F48A4DED5D99 /* Pods-MOSurveySwift-MOSurveySwiftUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WUQQBVA6S;
@@ -638,10 +758,11 @@
 		};
 		FD3D64E92605D73C0056D3FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5426103F8EA1A9E1D2C8F88E /* Pods-MOSurveySwiftTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9WUQQBVA6S;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
 				INFOPLIST_FILE = MOSurveySwiftTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -659,6 +780,7 @@
 		};
 		FD3D64EA2605D73C0056D3FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F93CA2FCB2400FB784E8D7A /* Pods-MOSurveySwiftTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Manual;
